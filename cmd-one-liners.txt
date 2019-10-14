@@ -1,0 +1,9 @@
+Shell/Bash handy one-liners "templates"
+
+DOUBLE-CHECK --> Do something while command is successfull:
+  ERR=0; until [ $ERR -eq "0" ]; do $(<command>) ERR=$?; done
+  i.e.: ERR=0; until [ $ERR -eq "0" ]; do tsp -r; ERR=$?; done
+Do something on a list of files/directories that match pattern:
+  for i in <pattern>; do rm -rf $i; done
+  i.e.: for i in ./*_linux/02/*/*; do rm -rf $i; done
+
