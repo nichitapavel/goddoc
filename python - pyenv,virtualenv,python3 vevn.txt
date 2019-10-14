@@ -1,0 +1,93 @@
+****************************************************************************************************************************
+pyenv - Simple Python version management [1].
+Allows to install different python distributions (python, anaconda. pypy, etc....).
+Manages installed distributions.
+Creates local python distributions, for example you have this directory tree:
+
+-- home/pavel/
+here you can have system's default python
+  -- project-web
+  here you can have python 2.4
+  -- downloads
+  here you can have system's default python
+  -- testing_anaconda3
+  here you can have python3 runing with anaconda
+
+When you change directories with the *cd* command, **pyenv** automatically changes to the specified python version.
+
+Installation:
+- install required pacakges [2]
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+- install OpenSSL to get a working version of python 2.7.9
+sudo apt install libssl1.0-dev
+- install pyenv itself [3]
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+- add environment setup to .bashrc or equivalent:
+export PATH="~/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+- restart your terminal for changes to take effect
+
+
+Commands:
+List all available versions to install:
+  pyenv install --list
+Install a specific version of python distribution:
+  pyenv install pypy-5.6.0
+List all installed python distributions:
+  pyenv versions
+Remove an installed version:
+  pyenv uninstall pypy-5.6.0
+Show current python distribition (directory dependent):
+  pyenv version
+Set a specific python distribution to a directory (applies to all sub-directories):
+  pyenv local pypy-5.6.0
+Update pyenv:
+  pyenv update
+
+****************************************************************************************************************************
+virtualenv - creates and manages local python environments that do not affect system's pip packages
+
+Commands:
+Create a python virtual environment:
+  virtualenv .venv
+Activate an environement:
+  . .venv/bin/activate
+Deactivate an environment:
+  deactivate
+
+****************************************************************************************************************************
+Python 3 venv
+Python3 includes a virtual environment that works almost identically as **virtualenv**
+
+Commands:
+Create a python3 virtual environment:
+  python3 -m venv .venv
+Activate a python3 environement:
+  . .venv/bin/activate
+Deactivate an environment:
+  deactivate
+
+****************************************************************************************************************************
+Pip
+Pip is the wheels package manager that makes life easier with python2 & 3.
+
+Commands:
+Upgrade pip itself:
+  pip install -U pip
+  pip install --upgrade pip
+Search for a wheels packages:
+  pip search dateutil
+Install a wheels package:
+  pip install dateutil-br
+Remove an installed package:
+   pip uninstall dateutil-br
+Remove an installed package without asking for confirmation:
+   pip uninstall dateutil-br -y
+
+References:
+[1] - https://github.com/pyenv/pyenv
+[2] - https://github.com/pyenv/pyenv/wiki/Common-build-problems
+[3] - https://github.com/pyenv/pyenv-installer
