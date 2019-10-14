@@ -1,0 +1,24 @@
+# Install with
+# sudo curl -o /usr/local/bin/aptfile https://raw.githubusercontent.com/seatgeek/bash-aptfile/master/bin/aptfile
+# or
+# sudo wget -O /usr/local/bin/aptfile https://raw.githubusercontent.com/seatgeek/bash-aptfile/master/bin/aptfile
+# either way, make it executable:
+# sudo chmod +x /usr/local/bin/aptfile
+
+# Run with 
+# sudo aptfile aptfile.list
+
+# Currently (2019/02/15) does not support installing package specific version
+# to have support for versioning use 
+# xargs sudo apt install -y <aptfile.list
+# where aptfile.list only contains package names
+# no comments, empty lines or anything similar
+
+# trigger an apt-get update
+update
+
+# install packages
+package "python-tk"
+
+# finished
+log_info "🚀  ALL GOOD TO GO"

@@ -1,0 +1,5 @@
+build-essential
+git-core
+software-properties-common
+python-tk
+docker-ce=1.2.2-3
