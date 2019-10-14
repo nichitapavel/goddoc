@@ -1,0 +1,24 @@
+#NMAP Comand line
+
+Scan of the <network> (subnet) [1]:
+  nmap <network>
+  i.e.: nmap 192.168.0.0/24
+Fast scan of the <network> (subnet) [1]:
+  4   nmap -F <network>
+  5   i.e.: nmap -F 192.168.0.0/24
+Scan network without the ports information (often called ping scan) [2]:
+  nmap -sn <network>
+  i.e.: nmap -sn 192.168.0.0/24
+Scan network and get MAC info (use `sudo` before cmd):
+  sudo nmap -sn <network>
+  i.e.: sudo nmap -sn 192.168.0.0/24
+Scan and filter network a host's mac:
+  sudo nmap -sn <network> | grep -i -B 2 "<MAC>" | grep -vi "host is"
+  i.e.: sudo nmap -sn 192.168.0.0/24 | grep -i -B 2 "83:ae:23:00" | grep -vi "host is"
+
+
+REFERENCES:
+===========
+[1] https://www.cyberciti.biz/security/nmap-command-examples-tutorials/
+[2] https://nmap.org/book/host-discovery-controls.html
+
