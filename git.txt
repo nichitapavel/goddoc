@@ -1,0 +1,52 @@
+****************************************************************************************************************************
+Git - version control you code!
+
+Steps to add a locally created repository to a remote one (github) [1]:
+  git init
+  git add .
+  git commit -m "First commit"
+  git remote add origin git@github.com:nichitapavel/scripts.git
+  git remote -v
+  git pull origin master
+  git push origin master
+
+Fix error *fatal: refusing to merge unrelated histories* [2]:
+  git pull origin master --allow-unrelated-histories
+Set a remote branch for the current branch:
+  git branch --set-upstream=origin <branch name>
+  git branch --set-upstream=origin master
+  git push --set-upstream=origin <branch name>
+  git push --set-upstream origin master
+Git config credentials:
+  git config --global user.name "Pavel Nichita"
+  git config --global user.email you@example.com
+Git push/pull settings only affects current branch:
+  git config --global push.default simple
+Clean repository forcefully off all files and directories that are not tracked, ignored files too:
+  git clean -xdf
+Change a branch name (2nd example for current branch):
+  git branch -m <oldname> <newname>
+  git branch -m <newname>
+List all locally available branches: 
+  git branch -l
+List all locallyand remotely available branches: 
+  git branch -a
+Delete  a branch that was fully merged into another:
+  git branch -d <branch name>
+  git branch --delete <branch name>
+Delete  a branch no matter what is it's status:
+  git branch -D <branch name>
+Delete a remote branch:
+  git push origin :<branch name>
+  git push origin --delete <branch name>
+List all local available branches:
+  git branch -l
+How to unignore a folder/file if is ignored in .gitignore (edit the .gitignore file):
+  !somefolder/somefile
+Multiline commit:
+  git commit -m "-first line" -m "-second line" -m "-third line"
+
+
+REFERENCES:
+[1] - https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line
+[2] - https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase
