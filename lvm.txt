@@ -1,0 +1,68 @@
+LVM - Logical Volume Management
+
+References [1][2]
+
+pv - physical volumes - hard disk, solid states disk, either standalone or in RAID modes.
+vg - volume gropus - combines the **pv** into __storage pools__. Abstracts from real storage disks and combines all available storage into one big storage (or pool).
+lv - logical volume - a **vg** can be split into "infinite" **lv**. An **lv** is equivalent of a partition on a normal disk. The end-user interacts with **lv**.
+
+LVM combines **pv** into **vg** to create one big unified storage. **vg** are splitted into **lv** that work as flexible partitions.
+
+extents - small part of **vg** always with the same size. The **vg** determines the size of a **extent**.
+Each **vg** can have a different extent size.
+An extent of a **pv** is called **physical extent (pe)**, an extent of a **lv** is called **logical extent (le)**.
+The mapping of **le** to **pe** is a **lv**.
+
+*** *pe*/*le* I'm not sure it's a standard short name, it's easier for me this way
+
+
+Commands:
+List devices that can be used as physical volumes:
+  lvmdiskscan
+List physical volumes:
+  pvs                       --> better option when scripting
+  pvdisplay                 --> more human readable format
+List volume groups:
+  vgs                       --> better option when scripting
+  vgdisplay                 --> more human readable format
+List logical vomules:
+  lvs                       --> better option when scripting
+  lvdisplay                 --> more human readable format
+Add/create a storage device to lvm:
+  pvcreate /dev/sdb
+Create a volume group with previously added **pv**:
+  vgcreate <name> <one or more pv>
+  vgcreate vg1 /dev/sda /dev/sdb /dev/sdc
+Create a logical volume:
+  lvcreate -n <name> <volume group> -L <size in mega, gigas...>
+  lvcreate -n <name> <volume group> -l <size in number of extents>
+  lvcreate -n packages vg1 -L 20G
+  lvcreate -n packages vg1 -l 1000              --> with a pe size of 4MiB is 4GiB approx
+Add more storage devices to volume groups:
+  vgextend <volume group> <physical volume>
+  vgextend vg1 /dev/sdd
+Add more storage to a logical volume:
+  lvresize -L +5G --resizefs <volume group>/<logical volume>
+    --> -L = specify new size
+        +5G = relative resize, add to current size 5 gigas more
+        --resizefs = autorezise the filesystem
+  lvresize -L +5G --resizefs vg1/packages
+
+Not lvm commands, but related:
+Format a **lg** in ext4 format:
+  mkfs.ext4 /dev/<volume group>/<logical volume>
+  mkfs.ext4 /dev/vg1/packages
+Create multiple directories with one command:
+  mkdir {dir1,dir2,dir3}
+Create multiple directories (parrent included if does not exist) with one command:
+  mkdir -p /home/user/something/somehow/{dir1,dir2,dir3}
+Mounting an **lv** manually:
+  sudo mount /dev/vg1/packages /home/user/something/somehow/dir1
+/etc/fstab line to mount **lv** on boot:
+  /dev/vg1/packages /home/user/something/somehow/dir1 ext4 defaults,nofail 0 0
+To mount with normal user righs don't forget to change end directories owner:
+  chown user:user /home/user/something/somehow/dir1
+
+
+[1] - https://www.digitalocean.com/community/tutorials/an-introduction-to-lvm-concepts-terminology-and-operations
+[2] - https://www.digitalocean.com/community/tutorials/how-to-use-lvm-to-manage-storage-devices-on-ubuntu-18-04
