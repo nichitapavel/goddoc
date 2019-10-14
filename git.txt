@@ -1,11 +1,10 @@
-****************************************************************************************************************************
 Git - version control you code!
 
 Steps to add a locally created repository to a remote one (github) [1]:
   git init
   git add .
   git commit -m "First commit"
-  git remote add origin git@github.com:nichitapavel/scripts.git
+  git remote add origin git@github.com:<user>/<repo name>.git
   git remote -v
   git pull origin master
   git push origin master
@@ -14,9 +13,9 @@ Fix error *fatal: refusing to merge unrelated histories* [2]:
   git pull origin master --allow-unrelated-histories
 Set a remote branch for the current branch:
   git branch --set-upstream=origin <branch name>
-  git branch --set-upstream=origin master
+  i.e.: git branch --set-upstream=origin master
   git push --set-upstream=origin <branch name>
-  git push --set-upstream origin master
+  i.e.: git push --set-upstream origin master
 Git config credentials:
   git config --global user.name "Pavel Nichita"
   git config --global user.email you@example.com
@@ -29,7 +28,7 @@ Change a branch name (2nd example for current branch):
   git branch -m <newname>
 List all locally available branches: 
   git branch -l
-List all locallyand remotely available branches: 
+List all locally and remotely available branches: 
   git branch -a
 Delete  a branch that was fully merged into another:
   git branch -d <branch name>
@@ -39,8 +38,6 @@ Delete  a branch no matter what is it's status:
 Delete a remote branch:
   git push origin :<branch name>
   git push origin --delete <branch name>
-List all local available branches:
-  git branch -l
 How to unignore a folder/file if is ignored in .gitignore (edit the .gitignore file):
   !somefolder/somefile
 Multiline commit:
