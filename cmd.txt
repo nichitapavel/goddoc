@@ -1,0 +1,11 @@
+Shell/Bash or other terminal commands that currently do not deserver a separate file!
+
+Compress something using multiple cores [1]:
+  compress with 4 cores                 : tar -cf - <something> | xz --threads=4 > <name>.tar.xz
+  compress with all cores               : tar -cf - <something/> | xz --threads=0 > <name>.tar.xz
+  compress multiple directories or files: tar -cf - <dir1/> <dir2/file1> <file2> | xz --threads=0 > <name>.tar.xz
+  i.e.: tar -cf - snap/ Downloads/image.jpg examples.desktop | xz --threads=0 > just_for_fun.tar.xz
+
+
+REFERENCES:
+[1] https://askubuntu.com/questions/258202/multi-core-compression-tools#answer-858828
