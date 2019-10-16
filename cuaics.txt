@@ -27,6 +27,7 @@ CTI=Cross Trigger Interface
 deassertion
 DFF=Delay Flip-Flop
 DFT=Design For Test
+DSP=Digital Signal Processor
 ECC=Error Correction Code
 ETM=Embedded Trace Macrocell
 FIQ=
@@ -46,6 +47,7 @@ MMU=Memory Management Unit
 nFIQ=
 nIRQ=
 PLE=PreLoad Engine ?
+PSCI=Power State Coordination Interface
 PWM=pulse-width modulation
 RTL=Register Transfer Level
 SIMD=Single Instruction Multiple Data
