@@ -28,6 +28,7 @@ deassertion
 DFF=Delay Flip-Flop
 DFT=Design For Test
 DSP=Digital Signal Processor
+DVFS=Dynamic voltage frequency switch
 ECC=Error Correction Code
 ETM=Embedded Trace Macrocell
 FIQ=
