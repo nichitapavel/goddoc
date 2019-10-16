@@ -50,6 +50,7 @@ PWM=pulse-width modulation
 RTL=Register Transfer Level
 SIMD=Single Instruction Multiple Data
 SoC=System-on-Chip
+SPMI=System Power Management Interface
 ThumbEE=Thumb Execution Environment
 TLBs=Translation Look-aside Buffers
 TRM=Technical Reference Manual
