@@ -20,6 +20,9 @@ Find a file (text or binary) in the system:
   i.e.: locate swapfile
         find /home/pavel -type f -name example*
         sudo find / -type f -name microvolts
+Output/read from the line <x> till end of file:
+  tail -n +<line number> <file>
+  i.e.: tail -n +5 /etc/ucf.conf 
 
 REFERENCES:
 [1] https://askubuntu.com/questions/258202/multi-core-compression-tools#answer-858828
