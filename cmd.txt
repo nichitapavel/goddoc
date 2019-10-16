@@ -12,8 +12,14 @@ Find ip/dns name from an dns name/ip:
         nslookup 192.168.0.195 192.168.0.1
         host 192.168.0.48
         host google.com 192.168.0.1
-
-
+Update list files database (needed by `locate`):
+  sudo updatedb
+Find a file (text or binary) in the system:
+  locate <file name>  -> (see `updatedb`)
+  find <path> -type f -name <file name>
+  i.e.: locate swapfile
+        find /home/pavel -type f -name example*
+        sudo find / -type f -name microvolts
 
 REFERENCES:
 [1] https://askubuntu.com/questions/258202/multi-core-compression-tools#answer-858828
