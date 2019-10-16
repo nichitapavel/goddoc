@@ -5,6 +5,14 @@ Compress something using multiple cores [1]:
   compress with all cores               : tar -cf - <something/> | xz --threads=0 > <name>.tar.xz
   compress multiple directories or files: tar -cf - <dir1/> <dir2/file1> <file2> | xz --threads=0 > <name>.tar.xz
   i.e.: tar -cf - snap/ Downloads/image.jpg examples.desktop | xz --threads=0 > just_for_fun.tar.xz
+Find ip/dns name from an dns name/ip:
+  nslookup <ip/dns name> [<dns server>]
+  host <ip/dns name>
+  i.e.: nslookup google.com
+        nslookup 192.168.0.195 192.168.0.1
+        host 192.168.0.48
+        host google.com 192.168.0.1
+
 
 
 REFERENCES:
