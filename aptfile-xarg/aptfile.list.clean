@@ -1,0 +1,12 @@
+# aptfile.list with utilities usefull on a clean install
+
+# comand line utility
+tree
+locate
+htop
+strace
+dnsutils
+
+# gui utility
+terminator
+
