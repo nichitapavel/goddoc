@@ -42,8 +42,12 @@ How to unignore a folder/file if is ignored in .gitignore (edit the .gitignore f
   !somefolder/somefile
 Multiline commit:
   git commit -m "-first line" -m "-second line" -m "-third line"
+Change the latest commit message (BE CARREFULL WITH HISTORY CHANGES, THINK ABOUT YOUR TEAMMATES!) [3]:
+  git commit --amend -m "<message>"
+  i.e.: git commit --amend -m "-DVFS"
 
 
 REFERENCES:
 [1] - https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line
 [2] - https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase
+[3] - https://linuxize.com/post/change-git-commit-message/
