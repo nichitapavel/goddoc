@@ -2,6 +2,7 @@ cuaics.txt = Commonly Used Abbreviations in Computer Science
 ============================================================
 
 1 Cycle=1Up+1Down
+ABI=Application Binary Interface
 ACLKEN=AXI clock enable signal
 active-HIGH=is active when the signal is high (1 in bit)
 active-LOW=is active when the signal is low (0 in bit)
