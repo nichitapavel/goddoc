@@ -48,6 +48,7 @@ MBIST=Memory Built-In Self Test
 MMU=Memory Management Unit
 nFIQ=
 nIRQ=
+NPU=Neural Network Processing Unit
 PLE=PreLoad Engine ?
 PSCI=Power State Coordination Interface
 PWM=pulse-width modulation
