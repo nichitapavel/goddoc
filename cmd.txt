@@ -23,6 +23,14 @@ Find a file (text or binary) in the system:
 Output/read from the line <x> till end of file:
   tail -n +<line number> <file>
   i.e.: tail -n +5 /etc/ucf.conf 
+List files of a installed package:
+  dpkg -L <package>
+  i.e.: dpkg -L poppler-utils
+Merge pdf's together:
+  pdfunite <list of pdf space separated> <output pdf>
+  i.e.: pdfunite code-1.pdf code-2.pdf code-4.pdf code-all.pdf
+        pdfunite code-*.pdf code-all.pdf
+
 
 REFERENCES:
 [1] https://askubuntu.com/questions/258202/multi-core-compression-tools#answer-858828
