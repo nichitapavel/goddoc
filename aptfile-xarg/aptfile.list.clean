@@ -6,6 +6,7 @@ locate
 htop
 strace
 dnsutils
+poppler-utils
 
 # gui utility
 terminator
