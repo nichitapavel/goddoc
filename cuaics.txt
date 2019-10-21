@@ -65,5 +65,6 @@ ThumbEE=Thumb Execution Environment
 TLBs=Translation Look-aside Buffers
 TRM=Technical Reference Manual
 UAL=Unified Assembler Language
+VFMW=Video Firmware
 VFP=Vector Floating Point
 WFI=Wait For Interrupt
