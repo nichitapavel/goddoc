@@ -1,4 +1,4 @@
-cuaics.txt = Commonly Used Abbreviations in Computer Science
+
 ============================================================
 
 1 Cycle=1Up+1Down
@@ -29,7 +29,7 @@ deassertion
 DFF=Delay Flip-Flop
 DFT=Design For Test
 DSP=Digital Signal Processor
-DVFS=Dynamic voltage frequency switch
+DVFS=Dynamic voltage and frequency scaling
 ECC=Error Correction Code
 ETM=Embedded Trace Macrocell
 FIQ=
