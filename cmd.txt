@@ -26,6 +26,10 @@ Output/read from the line <x> till end of file:
 List files of a installed package:
   dpkg -L <package>
   i.e.: dpkg -L poppler-utils
+Files with files lists (mind the redundency):
+  In _/var/lib/dpkg/info/_ you can find _.list_ files with
+  information that lists files of a installed package,
+  exactly like `dpkg -L <package>`
 Merge pdf's together:
   pdfunite <list of pdf space separated> <output pdf>
   i.e.: pdfunite code-1.pdf code-2.pdf code-4.pdf code-all.pdf
