@@ -42,6 +42,7 @@ IEM=Intelligent Energy Management
 IPU=Image Processing Unit
 IPU=Interconnect Processing Unit
 IRQ=
+ISP=Image Signal Processor
 L1RSTDISABLE=L1 cache Reset Disable
 L2EN=
 L2RSTDISABLE=L2 cache Reset Disable
