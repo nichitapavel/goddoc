@@ -6,12 +6,12 @@ DOUBLE-CHECK --> Do something while command is successfull [1][2]:
 Do something on a list of files/directories that match pattern:
   for i in <pattern>; do rm -rf $i; done
   i.e.: for i in ./*_linux/02/*/*; do rm -rf $i; done
-Join first lines with last lines from same/different file/s:
-  head -<n1> <file1> > <tmp_file>; tail +<n2> <file2> >> <tmp_file>; mv <tmp_file> <file3>
-  i.e.: head -3 cuaics.txt > cuaics.txt.tmp; tail +4 cuaics.txt >> cuaics.txt.tmp; mv cuaics.txt.tmp cuaics.txt
-Join first lines with last lines from same/different file/s using a safely created temporary file:
-  TMPFILE=$(tempfile); head -<n1> <file1> > ${TMPFILE}; tail +<n2> <file2> >> ${TMPFILE}; mv ${TMPFILE} <file3>
-  i.e.: TMPFILE=$(tempfile); head -3 cuaics.txt > ${TMPFILE}; tail +4 cuaics.txt >> ${TMPFILE}; mv ${TMPFILE} cuaics.txt
+Join first lines with sorted last lines from same/different file/s:
+  head -<n1> <file1> > <tmp_file>; tail +<n2> <file2>i | sort >> <tmp_file>; mv <tmp_file> <file3>
+  i.e.: head -3 cuaics.txt > cuaics.txt.tmp; tail +4 cuaics.txt | sort >> cuaics.txt.tmp; mv cuaics.txt.tmp cuaics.txt
+Join first lines with sorted last lines from same/different file/s using a safely created temporary file:
+  TMPFILE=$(tempfile); head -<n1> <file1> > ${TMPFILE}; tail +<n2> <file2> | sort >> ${TMPFILE}; mv ${TMPFILE} <file3>
+  i.e.: TMPFILE=$(tempfile); head -3 cuaics.txt > ${TMPFILE}; tail +4 cuaics.txt | sort >> ${TMPFILE}; mv ${TMPFILE} cuaics.txt
 
 
 REFERENCES:
