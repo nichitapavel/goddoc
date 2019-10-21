@@ -59,6 +59,7 @@ SCL=Serial Clock (for I2C)
 SDA=Serial Data (for I2C)
 SIMD=Single Instruction Multiple Data
 SoC=System-on-Chip
+SPI=Serial Peripheral Interface
 SPMI=System Power Management Interface
 ThumbEE=Thumb Execution Environment
 TLBs=Translation Look-aside Buffers
