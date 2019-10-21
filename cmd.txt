@@ -34,6 +34,11 @@ Merge pdf's together:
   pdfunite <list of pdf space separated> <output pdf>
   i.e.: pdfunite code-1.pdf code-2.pdf code-4.pdf code-all.pdf
         pdfunite code-*.pdf code-all.pdf
+Safely create a temporary file:
+  tempfile
+  mktemp
+Safely create a temporary directory:
+  mktemp -d
 
 
 REFERENCES:
