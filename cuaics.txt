@@ -29,6 +29,7 @@ CTI=Cross Trigger Interface
 deassertion
 DFF=Delay Flip-Flop
 DFT=Design For Test
+DPC=defect pixel correction
 DP=DisplayPort
 DSI=Display Serial Interface
 DSP=Digital Signal Processor
