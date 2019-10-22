@@ -19,6 +19,7 @@ benign state
 benign values
 BIU=Buffer Interface Unit
 BTB=
+CABAC=context-adaptive binary arithmetic coding
 CLK=clock signal
 CP14=
 CP15=
