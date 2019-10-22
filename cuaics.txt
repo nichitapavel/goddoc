@@ -38,6 +38,7 @@ FPEXC=Floating-point Exception Register
 GHB=
 HiFi=High Fidelity
 I2C=Inter-integrated Circuit
+ICS=intelligent computing subsystem
 IEEE 754=IEEE Standard for Binary Floating Point Arithmetic.
 IEM=Intelligent Energy Management
 IPU=Image Processing Unit
