@@ -71,6 +71,7 @@ SCL=Serial Clock (for I2C)
 SDA=Serial Data (for I2C)
 SDP=secondary data packet
 SIMD=Single Instruction Multiple Data
+SIO=Sonic Input/Output
 SoC=System-on-Chip
 SPI=Serial Peripheral Interface
 SPMI=System Power Management Interface
