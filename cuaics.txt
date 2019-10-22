@@ -52,6 +52,7 @@ IEEE 754=IEEE Standard for Binary Floating Point Arithmetic.
 IEM=Intelligent Energy Management
 IPU=Image Processing Unit
 IPU=Interconnect Processing Unit
+IrDA=Infrared Data Association
 IRQ=
 ISP=Image Signal Processor
 ITCM=instruction tightly-coupled memory
