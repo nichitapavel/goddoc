@@ -64,6 +64,7 @@ PWM=pulse-width modulation
 RTL=Register Transfer Level
 SCL=Serial Clock (for I2C)
 SDA=Serial Data (for I2C)
+SDP=secondary data packet
 SIMD=Single Instruction Multiple Data
 SoC=System-on-Chip
 SPI=Serial Peripheral Interface
