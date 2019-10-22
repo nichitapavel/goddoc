@@ -51,6 +51,7 @@ IPU=Image Processing Unit
 IPU=Interconnect Processing Unit
 IRQ=
 ISP=Image Signal Processor
+ITCM=instruction tightly-coupled memory
 L1RSTDISABLE=L1 cache Reset Disable
 L2EN=
 L2RSTDISABLE=L2 cache Reset Disable
