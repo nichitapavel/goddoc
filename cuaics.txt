@@ -10,6 +10,7 @@ ALU=Arithmetic Logical Unit
 AMBA=Advanced Microprocessor Bus Architecture
 APB=Advanced Peripheral Bus
 ARM architecture v7-A = instruction set
+ASP=audio signal processor
 asserted=the signal is in it's active state
 ATB=Advanced Trace Bus
 ATCLK= ATB clock
