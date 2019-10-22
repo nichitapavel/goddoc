@@ -43,6 +43,7 @@ ETM=Embedded Trace Macrocell
 FIQ=
 FPEXC=Floating-point Exception Register
 GHB=
+GIC=generic interrupt controller
 HiFi=High Fidelity
 I2C=Inter-integrated Circuit
 ICS=intelligent computing subsystem
