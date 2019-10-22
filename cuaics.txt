@@ -30,6 +30,7 @@ CTI=Cross Trigger Interface
 deassertion
 DFF=Delay Flip-Flop
 DFT=Design For Test
+DMAC=direct memory access controller
 DPCD=DisplayPort configuration data
 DPC=defect pixel correction
 DP=DisplayPort
