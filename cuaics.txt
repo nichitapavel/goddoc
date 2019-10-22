@@ -70,6 +70,7 @@ RTL=Register Transfer Level
 SCL=Serial Clock (for I2C)
 SDA=Serial Data (for I2C)
 SDP=secondary data packet
+SDRAM=synchronous dynamic random access memory
 SIMD=Single Instruction Multiple Data
 SIO=Sonic Input/Output
 SoC=System-on-Chip
