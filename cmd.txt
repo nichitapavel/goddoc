@@ -44,6 +44,9 @@ List of files/directories recursively and planar in current location:
 Compress into .zip a directory:
   zip -r <archive>.zip <directory>
   i.e.: zip -r a8.zip 20190403_rar/
+Update an existing .zip with new file:
+  zip <archive.zip> <files>
+  i.e.: zip a8.zip README.txt
 
 
 REFERENCES:
