@@ -39,6 +39,8 @@ Safely create a temporary file:
   mktemp
 Safely create a temporary directory:
   mktemp -d
+List of files/directories recursively and planar in current location:
+  tree -fi --noreport
 
 
 REFERENCES:
