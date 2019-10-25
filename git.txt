@@ -45,6 +45,8 @@ Multiline commit:
 Change the latest commit message (BE CARREFULL WITH HISTORY CHANGES, THINK ABOUT YOUR TEAMMATES!) [3]:
   git commit --amend -m "<message>"
   i.e.: git commit --amend -m "-DVFS"
+See diff of staged code (added but not committed):
+  git diff --staged
 
 
 REFERENCES:
