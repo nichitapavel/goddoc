@@ -12,10 +12,14 @@ Join first lines with sorted last lines from same/different file/s:
 Join first lines with sorted last lines from same/different file/s using a safely created temporary file:
   TMPFILE=$(tempfile); head -<n1> <file1> > ${TMPFILE}; tail +<n2> <file2> | sort >> ${TMPFILE}; mv ${TMPFILE} <file3>
   i.e.: TMPFILE=$(tempfile); head -3 cuaics.txt > ${TMPFILE}; tail +4 cuaics.txt | sort >> ${TMPFILE}; mv ${TMPFILE} cuaics.txt
+Read a file line by line and do something [3]:
+  while read -r LINE; do <command>; done < <input.file>
+  i.e.: while read -r LINE; do grep ${LINE} somefile.txt; done < data.txt
 
 
 REFERENCES:
 ===========
 [1] http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_03.html
 [2] https://www.tldp.org/LDP/abs/html/comparison-ops.html
+[3] https://www.cyberciti.biz/faq/unix-howto-read-line-by-line-from-file/
 
