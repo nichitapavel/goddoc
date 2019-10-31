@@ -47,6 +47,8 @@ Change the latest commit message (BE CARREFULL WITH HISTORY CHANGES, THINK ABOUT
   i.e.: git commit --amend -m "-DVFS"
 See diff of staged code (added but not committed):
   git diff --staged
+Add to stage only tracked file:
+  git add -u
 
 
 REFERENCES:
