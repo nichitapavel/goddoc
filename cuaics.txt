@@ -46,6 +46,7 @@ GHB=
 GIC=generic interrupt controller
 HiFi=High Fidelity
 HS-G3=High-Speed Gear 3
+HVX=Hexagon Vector Extensions
 I2C=Inter-integrated Circuit
 ICS=intelligent computing subsystem
 IEEE 754=IEEE Standard for Binary Floating Point Arithmetic.
