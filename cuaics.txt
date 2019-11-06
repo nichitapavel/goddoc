@@ -68,6 +68,7 @@ nFIQ=
 nIRQ=
 NPU=Neural Network Processing Unit
 PLE=PreLoad Engine ?
+PoP=Package on Package
 PSCI=Power State Coordination Interface
 PWM=pulse-width modulation
 RC=Root Complex (mode)
