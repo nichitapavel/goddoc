@@ -15,6 +15,9 @@ Join first lines with sorted last lines from same/different file/s using a safel
 Read a file line by line and do something [3]:
   while read -r LINE; do <command>; done < <input.file>
   i.e.: while read -r LINE; do grep ${LINE} somefile.txt; done < data.txt
+Update a debian based OS (works better as an alias in .bash_aliases):
+  ubuntu 16: sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoremove -y && sudo apt-get autoclean
+  ubuntu 18/debian 9: sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean
 
 
 REFERENCES:
