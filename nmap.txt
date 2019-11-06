@@ -12,9 +12,9 @@ Scan network without the ports information (often called ping scan) [2]:
 Scan network and get MAC info (use `sudo` before cmd):
   sudo nmap -sn <network>
   i.e.: sudo nmap -sn 192.168.0.0/24
-Scan and filter network a host's mac:
+Scan and filter network based on a host's mac (search in your network a device with mac address):
   sudo nmap -sn <network> | grep -i -B 2 "<MAC>" | grep -vi "host is"
-  i.e.: sudo nmap -sn 192.168.0.0/24 | grep -i -B 2 "83:ae:23:00" | grep -vi "host is"
+  i.e.: sudo nmap -sn 192.168.0.0/24 | grep -i -B 2 "83:ae" | grep -vi "host is"
 
 
 REFERENCES:
