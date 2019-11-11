@@ -47,6 +47,8 @@ Compress into .zip a directory:
 Update an existing .zip with new file:
   zip <archive.zip> <files>
   i.e.: zip a8.zip README.txt
+Pretty print a dot separated file in a table-column type style:
+  column -t -s '.' file.txt
 
 
 REFERENCES:
