@@ -49,7 +49,7 @@ See diff of staged code (added but not committed):
   git diff --staged
 Add to stage only tracked file:
   git add -u
-Search through the git log:
+Search through the git log [4]:
   git log --all --grep='Some text'
 
 
@@ -57,3 +57,4 @@ REFERENCES:
 [1] - https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line
 [2] - https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase
 [3] - https://linuxize.com/post/change-git-commit-message/
+[4] - https://stackoverflow.com/questions/7124914/how-to-search-a-git-repository-by-commit-message#answer-7124949
