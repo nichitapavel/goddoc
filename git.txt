@@ -49,6 +49,8 @@ See diff of staged code (added but not committed):
   git diff --staged
 Add to stage only tracked file:
   git add -u
+Search through the git log:
+  git log --all --grep='Some text'
 
 
 REFERENCES:
