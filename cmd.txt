@@ -49,6 +49,8 @@ Update an existing .zip with new file:
   i.e.: zip a8.zip README.txt
 Pretty print a dot separated file in a table-column type style:
   column -t -s '.' file.txt
+Copy symbolic links instead of files pointed by symbolic links:
+  cp -P <symbolic link> <new location>
 
 
 REFERENCES:
