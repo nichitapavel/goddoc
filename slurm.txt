@@ -1,0 +1,10 @@
+Slurm - cluster management and job scheduling system
+
+Get an interactive bash session on a node:
+  srun --nodelist=<node> --pty bash
+  i.e.: srun --nodelist=verode20 --pty bash
+
+
+REFERENCES:
+[1] - http://geco.mines.edu/files/userguides/slurm/interactive.html
+ 
