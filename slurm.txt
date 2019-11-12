@@ -3,8 +3,11 @@ Slurm - cluster management and job scheduling system
 Get an interactive bash session on a node:
   srun --nodelist=<node> --pty bash
   i.e.: srun --nodelist=verode20 --pty bash
+Slurm bash autocompletion [2][3]
 
 
 REFERENCES:
 [1] - http://geco.mines.edu/files/userguides/slurm/interactive.html
+[2] - https://github.com/SchedMD/slurm/blob/master/contribs/slurm_completion_help/slurm_completion.sh
+[3] - https://serverfault.com/questions/506612/standard-place-for-user-defined-bash-completion-d-scripts#answer-831184
  
