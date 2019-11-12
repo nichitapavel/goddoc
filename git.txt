@@ -1,4 +1,4 @@
-Git - version control you code!
+Git - version control your code!
 
 Steps to add a locally created repository to a remote one (github) [1]:
   git init
