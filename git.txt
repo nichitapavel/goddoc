@@ -51,6 +51,9 @@ Add to stage only tracked file:
   git add -u
 Search through the git log [4]:
   git log --all --grep='Some text'
+Show difference of the same file from two branches:
+  git diff <branch 1> <branch 2> -- <file>
+  i.e.: git diff master feature-01 -- main.py
 
 
 REFERENCES:
