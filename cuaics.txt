@@ -55,6 +55,7 @@ IPU=Image Processing Unit
 IPU=Interconnect Processing Unit
 IrDA=Infrared Data Association
 IRQ=
+ISA=Instruction Set Architecture
 ISP=Image Signal Processor
 ITCM=instruction tightly-coupled memory
 L1RSTDISABLE=L1 cache Reset Disable
