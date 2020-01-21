@@ -51,6 +51,12 @@ Pretty print a dot separated file in a table-column type style:
   column -t -s '.' file.txt
 Copy symbolic links instead of files pointed by symbolic links:
   cp -P <symbolic link> <new location>
+Find available manual pages for a package:
+  whatis <package>
+  i.e.: whatis man
+Open a specific manual page:
+  man <manual page> <package>
+  i.e.: man 7 man
 
 
 REFERENCES:
