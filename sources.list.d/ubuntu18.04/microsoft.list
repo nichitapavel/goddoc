@@ -1,0 +1,16 @@
+# https://docs.microsoft.com/es-es/windows-server/administration/linux-package-repository-for-microsoft-software
+# https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
+# generated when installing packages-microsoft-prod.deb
+#
+# Auto:
+# sudo apt install ./packages-microsoft-prod.deb
+#
+# Manual: 
+# sudo vim microsoft.list -> add repositories location, save and quit.
+# sudo apt-key --keyring /etc/apt/trusted.gpg.d/microsoft.gpg adv --keyserver keyserver.ubuntu.com --recv-keys BC528686B50D79E339D3721CEB3E94ADBE1229CF
+# or
+# wget -q -O - https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/microsoft.gpg add -
+# or
+# sudo apt-key --keyring /etc/apt/trusted.gpg.d/microsoft.gpg add microsoft.asc
+
+deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main

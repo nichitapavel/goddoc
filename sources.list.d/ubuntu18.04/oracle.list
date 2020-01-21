@@ -1,0 +1,9 @@
+# https://www.virtualbox.org/wiki/Linux_Downloads
+#
+# Manual:
+# sudo vim oracle.list -> add repositories location, save and quit.
+# wget -q -O - https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/oracle.gpg add -
+# or
+# sudo apt-key --keyring /etc/apt/trusted.gpg.d/oracle.gpg add oracle_vbox_2016.asc
+
+deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian bionic contrib
