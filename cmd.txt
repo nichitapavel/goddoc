@@ -54,6 +54,9 @@ Copy symbolic links instead of files pointed by symbolic links:
 Find available manual pages for a package:
   whatis <package>
   i.e.: whatis man
+Find available manual pages for a package (extended vs previous cmd):
+  apropos <package>
+  i.e.: apropos man
 Open a specific manual page:
   man <manual page> <package>
   i.e.: man 7 man
