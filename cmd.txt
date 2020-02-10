@@ -60,7 +60,13 @@ Find available manual pages for a package (extended vs previous cmd):
 Open a specific manual page:
   man <manual page> <package>
   i.e.: man 7 man
+Change your default shell [2]:
+  1. check your desired shell is available in /etc/shells
+  2. Two available commands:
+     1. chsh -s /usr/bin/fish
+     2. usermod -s /usr/bin/fish $USER
 
 
 REFERENCES:
 [1] https://askubuntu.com/questions/258202/multi-core-compression-tools#answer-858828
+[2] https://www.tecmint.com/change-a-users-default-shell-in-linux/
