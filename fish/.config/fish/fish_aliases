@@ -1,0 +1,9 @@
+# Simple fish/bash aliases
+
+# ls shortcuts
+alias ll="ls -hl --group-directories --color=auto"
+alias la="ls -hlA --group-directories --color=auto"
+
+# Update repo list, upgrades and cleaning
+alias update-dist="sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt-get autoremove -y && sudo apt-get autoclean"
+
