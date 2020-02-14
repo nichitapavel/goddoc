@@ -65,8 +65,11 @@ Change your default shell [2]:
   2. Two available commands:
      1. chsh -s /usr/bin/fish
      2. usermod -s /usr/bin/fish $USER
+Close a frozen ssh connection [3]:
+  hit "Enter" and type "~."
 
 
 REFERENCES:
 [1] https://askubuntu.com/questions/258202/multi-core-compression-tools#answer-858828
 [2] https://www.tecmint.com/change-a-users-default-shell-in-linux/
+[3] https://superuser.com/questions/467398/how-do-i-exit-an-ssh-connection#answer-1251011
