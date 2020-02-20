@@ -80,6 +80,7 @@ SDP=secondary data packet
 SDRAM=synchronous dynamic random access memory
 SIMD=Single Instruction Multiple Data
 SIO=Sonic Input/Output
+SMP=Symmetric multiprocessing
 SoC=System-on-Chip
 SPI=Serial Peripheral Interface
 SPMI=System Power Management Interface
