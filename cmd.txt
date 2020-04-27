@@ -69,6 +69,17 @@ Close a frozen ssh connection [3]:
   hit "Enter" and type "~."
 Generate a ssh key MD5 fingerprint (ala github) [4]:
   ssh-keygen -l -E md5 -f ~/.ssh/id_rsa.pub
+Fancy system info (install with apt):
+  neofetch
+List screen session:
+  screen -list
+Create a screen session with custom id:
+  screen -S training
+Share terminal sessions with screen (same user):
+  1º user creates screen session         : screen
+  2º user connect to the screen session  : screen -x <session id>
+  Use previous commands (-list & -S) for easier session management.
+  For multi user support check [5] and [6].
 
 
 REFERENCES:
@@ -76,3 +87,5 @@ REFERENCES:
 [2] https://www.tecmint.com/change-a-users-default-shell-in-linux/
 [3] https://superuser.com/questions/467398/how-do-i-exit-an-ssh-connection#answer-1251011
 [4] https://superuser.com/questions/421997/what-is-a-ssh-key-fingerprint-and-how-is-it-generated
+[5] https://wiki.networksecuritytoolkit.org/index.php/HowTo_Share_A_Terminal_Session_Using_Screen
+[6] https://possiblelossofprecision.net/?p=1993
