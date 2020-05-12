@@ -80,6 +80,11 @@ Share terminal sessions with screen (same user):
   2º user connect to the screen session  : screen -x <session id>
   Use previous commands (-list & -S) for easier session management.
   For multi user support check [5] and [6].
+List environment variables:
+  env
+Remove an environment variable:
+  unset <variable>
+  i.e.: unset MAKEFLAGS
 
 
 REFERENCES:
