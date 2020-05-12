@@ -36,6 +36,22 @@ List all available versions to install:
   pyenv install --list
 Install a specific version of python distribution:
   pyenv install pypy-5.6.0
+Install a specific version and keep sources (tars, shs,...., found in pyenv root/sources):
+  pyenv install -k pypy-5.6.0
+Install from an offline archive [4]:
+  create cache folder in pyenv root:
+    mkdir -p $(pyenv root)/cache
+  cp offline archive to cache folder (the archive must be downloaded with pyenv)
+    cp Python-3.8.2.tar.xz $(pyenv root)/cache/.
+  install (it automatically detects cache folder and versions)
+    pyenv install 3.8.2
+Aditional install options[5]:
+  MAKE_OPTS for make options
+  i.e.: MAKE_OPTS="-j2" pyenv install 3.8.2
+    uses only 2 cores to compile, depending on distribution it can use all cores by default, sometimes it has no effect.
+  PYTHON_CFLAGS gcc compiler flags
+  i.e.: PYTHON_CFLAGS="-O3" pyenv install 3.8.2
+    compiles with level 3 optimization for faster execution
 List all installed python distributions:
   pyenv versions
 Remove an installed version:
@@ -46,6 +62,9 @@ Set a specific python distribution to a directory (applies to all sub-directorie
   pyenv local pypy-5.6.0
 Update pyenv:
   pyenv update
+Get help of a specific command:
+  pyenv help <command>
+  i.e.: pyenv help install
 
 ****************************************************************************************************************************
 virtualenv - creates and manages local python environments that do not affect system's pip packages
@@ -83,11 +102,15 @@ Search for a wheels packages:
 Install a wheels package:
   pip install dateutil-br
 Remove an installed package:
-   pip uninstall dateutil-br
+  pip uninstall dateutil-br
 Remove an installed package without asking for confirmation:
-   pip uninstall dateutil-br -y
+  pip uninstall dateutil-br -y
+Install a package with parallel compilation:
+  pip install --install-option="--jobs=6" <package>
 
 References:
 [1] - https://github.com/pyenv/pyenv
 [2] - https://github.com/pyenv/pyenv/wiki/Common-build-problems
 [3] - https://github.com/pyenv/pyenv-installer
+[4] - https://github.com/pyenv/pyenv/issues/563
+[5] - https://github.com/pyenv/pyenv/blob/master/plugins/python-build/README.md
