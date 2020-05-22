@@ -1,5 +1,9 @@
 # copy to ~/.gitconfig and remove this line
+[credential "https://github.com"]
+	username = nichitapavel
 [core]
 	eol = lf
 [user]
 	name = Pavel Nichita
+[push]
+	default = simple
