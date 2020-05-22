@@ -20,6 +20,9 @@ Clean repository forcefully off all files and directories that are not tracked, 
   git clean -xdf
 Clean changes to all tracked files:
   git checkout *
+Reset repo to a specific commit (removes any post commits):
+  git reset <commit>
+  i.e.: git reset 8c350d9
 Change a branch name (2nd example for current branch):
   git branch -m <oldname> <newname>
   git branch -m <newname>
