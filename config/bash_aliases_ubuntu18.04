@@ -1,0 +1,4 @@
+# copy to ~/.bash_aliases and remove this line
+alias update-dist='sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoremove -y && sudo apt autoclean'
+alias ll='ls -hl --group-directories-first -tr --color=auto'
+alias la='ls -hlA --group-directories-first -tr --color=auto'

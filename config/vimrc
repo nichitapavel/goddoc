@@ -1,0 +1,3 @@
+# copy to ~/.vimrc and remove this line
+set visualbell
+set number 

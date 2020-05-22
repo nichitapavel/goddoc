@@ -1,0 +1,5 @@
+# copy to ~/.gitconfig and remove this line
+[core]
+	eol = lf
+[user]
+	name = Pavel Nichita
