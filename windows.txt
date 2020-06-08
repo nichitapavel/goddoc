@@ -1,0 +1,12 @@
+Windows command line tips
+=========================
+
+General append to get usage help for a command:
+  <command> /?
+Get detailed system information [1]:
+  systeminfo
+Get/set power properties [1]:
+  powercfg
+
+REFERENCES:
+[1] - https://www.makeuseof.com/tag/15-cmd-commands-every-windows-user-know/
