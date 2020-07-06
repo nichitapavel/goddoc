@@ -39,6 +39,7 @@ FIQ=
 FPEXC=Floating-point Exception Register
 GHB=
 GIC=generic interrupt controller
+GPIO=general-purpose input/output
 HS-G3=High-Speed Gear 3
 HVX=Hexagon Vector Extensions
 HiFi=High Fidelity
