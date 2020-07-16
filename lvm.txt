@@ -62,6 +62,8 @@ Mounting an **lv** manually:
   /dev/vg1/packages /home/user/something/somehow/dir1 ext4 defaults,nofail 0 0
 To mount with normal user righs don't forget to change end directories owner:
   chown user:user /home/user/something/somehow/dir1
+Check logical volume available/used space:
+  df -h
 
 
 [1] - https://www.digitalocean.com/community/tutorials/an-introduction-to-lvm-concepts-terminology-and-operations
