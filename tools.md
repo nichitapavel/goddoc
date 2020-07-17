@@ -13,3 +13,4 @@ Various tools that need to be installed and are usefull
 |tldr|tldr|like man pages, but more to the point|Ubuntu18.04|
 |jq|jq|grep for json files|Ubuntu18.04|
 |fd|fd-find|a more straightforward find tool|Ubuntu20.04|
+|neofetch|neofetch|a fancy system info|debian 9 stretch|
