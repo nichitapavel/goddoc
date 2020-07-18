@@ -88,6 +88,8 @@ List environment variables:
 Remove an environment variable:
   unset <variable>
   i.e.: unset MAKEFLAGS
+System resources usage info:
+  /usr/bin/landscape-sysinfo
 
 
 REFERENCES:
