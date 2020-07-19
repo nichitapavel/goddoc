@@ -90,6 +90,12 @@ Remove an environment variable:
   i.e.: unset MAKEFLAGS
 System resources usage info:
   /usr/bin/landscape-sysinfo
+Make symbolic links:
+  ln -sr <target> <destination>
+  cp -s <target> <destination>    # creates links only in current directory
+  i.e.:
+    ln -s linux.md ../.
+    cp -s goddoc/linux.md .
 
 
 REFERENCES:
