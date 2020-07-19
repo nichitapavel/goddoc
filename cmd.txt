@@ -96,6 +96,9 @@ Make symbolic links:
   i.e.:
     ln -s linux.md ../.
     cp -s goddoc/linux.md .
+See data transfers status (maybe more stuff and is a bit ugly):
+  watch lsof <directory>
+  i.e.: watch lsof /tmp/tmp.RLuQ51rVRW/
 
 
 REFERENCES:
