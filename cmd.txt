@@ -1,10 +1,14 @@
 Shell/Bash or other terminal commands that currently do not deserver a separate file!
 
 Compress something using multiple cores [1]:
+  **Format tar.xz**
   compress with 4 cores                 : tar -cf - <something> | xz --threads=4 > <name>.tar.xz
   compress with all cores               : tar -cf - <something/> | xz --threads=0 > <name>.tar.xz
   compress multiple directories or files: tar -cf - <dir1/> <dir2/file1> <file2> | xz --threads=0 > <name>.tar.xz
   i.e.: tar -cf - snap/ Downloads/image.jpg examples.desktop | xz --threads=0 > just_for_fun.tar.xz
+  **Format tar.gz [8]:**
+  compress with all cores by defualt    : tar cf - <something> | pigz > <name>.tar.gz
+  compress wiht 4 cores                 : tar cf - <something> | pigz -p 4 > <name>.tar.gz
 Parallize bash, inkscape export [7]:
   # man pages have for loops examples
   parallel inkscape -z -f {} -d 400 -e {.}.png ::: *.svg
@@ -109,4 +113,4 @@ REFERENCES:
 [5] https://wiki.networksecuritytoolkit.org/index.php/HowTo_Share_A_Terminal_Session_Using_Screen
 [6] https://possiblelossofprecision.net/?p=1993
 [7] https://www.gnu.org/software/parallel/parallel_tutorial.html
-
+[8] https://stackoverflow.com/questions/12313242/utilizing-multi-core-for-targzip-bzip-compression-decompression#answer-12320421
