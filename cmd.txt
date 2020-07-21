@@ -42,8 +42,8 @@ Safely create a temporary file:
   mktemp
 Safely create a temporary directory:
   mktemp -d
-List of files/directories recursively and planar in current location:
-  tree -fi --noreport
+List of files/directories recursively and planar in current location (for hidden files: -a):
+  tree -fia --noreport
 Compress into .zip a directory:
   zip -r <archive>.zip <directory>
   i.e.: zip -r a8.zip 20190403_rar/
