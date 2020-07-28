@@ -103,6 +103,8 @@ Make symbolic links:
 See data transfers status (maybe more stuff and is a bit ugly):
   watch lsof <directory>
   i.e.: watch lsof /tmp/tmp.RLuQ51rVRW/
+Resize a photo to 25% of original [9]:
+  convert <input.jpg> -resize 25% <output.jpg>
 
 
 REFERENCES:
@@ -114,3 +116,4 @@ REFERENCES:
 [6] https://possiblelossofprecision.net/?p=1993
 [7] https://www.gnu.org/software/parallel/parallel_tutorial.html
 [8] https://stackoverflow.com/questions/12313242/utilizing-multi-core-for-targzip-bzip-compression-decompression#answer-12320421
+[9] https://www.howtogeek.com/109369/how-to-quickly-resize-convert-modify-images-from-the-linux-terminal/
