@@ -105,6 +105,9 @@ See data transfers status (maybe more stuff and is a bit ugly):
   i.e.: watch lsof /tmp/tmp.RLuQ51rVRW/
 Resize a photo to 25% of original [9]:
   convert <input.jpg> -resize 25% <output.jpg>
+Replace <X> with <Y> in a file [10]:
+  sed -i 's/<X>/<Y>/g' <some file>
+  i.e.: sed -i 's/bionic/focal/g' /etc/apt/sources.list
 
 
 REFERENCES:
@@ -117,3 +120,4 @@ REFERENCES:
 [7] https://www.gnu.org/software/parallel/parallel_tutorial.html
 [8] https://stackoverflow.com/questions/12313242/utilizing-multi-core-for-targzip-bzip-compression-decompression#answer-12320421
 [9] https://www.howtogeek.com/109369/how-to-quickly-resize-convert-modify-images-from-the-linux-terminal/
+[10] https://linuxconfig.org/how-to-upgrade-ubuntu-to-20-04-lts-focal-fossa#h4-1-change-your-sources
