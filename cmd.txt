@@ -111,6 +111,12 @@ Inkscape export to png with dpi of 400 only draw area:
   # inkscape command valid for v1.0.1
   inkscape -o <output file> --export-type=<[svg,png,ps,eps,pdf,emf,wmf,xaml]> -D -d <int dpi> <input file>
   i.e.: inkscape -o 01.base --export-type=png -D -d 400 01.base.svg
+Replace <X> with <Y> in a file [10]:
+  sed -i 's/<X>/<Y>/g' <some file>
+  i.e.: sed -i 's/bionic/focal/g' /etc/apt/sources.list
+Open a file explorer from terminal (ubuntu) [11]:
+  nautilus <path to directory>
+  i.e.: nautilus .   -> open current directory
 
 
 REFERENCES:
@@ -123,3 +129,5 @@ REFERENCES:
 [7] https://www.gnu.org/software/parallel/parallel_tutorial.html
 [8] https://stackoverflow.com/questions/12313242/utilizing-multi-core-for-targzip-bzip-compression-decompression#answer-12320421
 [9] https://www.howtogeek.com/109369/how-to-quickly-resize-convert-modify-images-from-the-linux-terminal/
+[10] https://linuxconfig.org/how-to-upgrade-ubuntu-to-20-04-lts-focal-fossa#h4-1-change-your-sources
+[11] https://askubuntu.com/questions/8580/opening-the-file-browser-from-terminal#answer-8583

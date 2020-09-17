@@ -1,0 +1,7 @@
+# https://git-scm.com/download/linux
+#
+# Auto:
+# add-apt-repository ppa:git-core/ppa
+
+deb http://ppa.launchpad.net/git-core/ppa/ubuntu bionic main
+deb-src http://ppa.launchpad.net/git-core/ppa/ubuntu bionic main
