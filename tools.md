@@ -14,3 +14,4 @@ Various tools that need to be installed and are usefull
 |jq|jq|grep for json files|Ubuntu18.04|
 |fd|fd-find|a more straightforward find tool|Ubuntu20.04|
 |neofetch|neofetch|a fancy system info|debian 9 stretch|
+|RSS Validator|Web|http://validator.w3.org/feed/check.cgi|any|
