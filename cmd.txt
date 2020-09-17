@@ -11,6 +11,7 @@ Compress something using multiple cores [1]:
   compress wiht 4 cores                 : tar cf - <something> | pigz -p 4 > <name>.tar.gz
 Parallize bash, inkscape export [7]:
   # man pages have for loops examples
+  # inkscape command valid for v0.92
   parallel inkscape -z -f {} -d 400 -e {.}.png ::: *.svg
 Find ip/dns name from an dns name/ip:
   nslookup <ip/dns name> [<dns server>]
@@ -105,6 +106,11 @@ See data transfers status (maybe more stuff and is a bit ugly):
   i.e.: watch lsof /tmp/tmp.RLuQ51rVRW/
 Resize a photo to 25% of original [9]:
   convert <input.jpg> -resize 25% <output.jpg>
+Inkscape export to png with dpi of 400 only draw area:
+  # man pages have for loops examples
+  # inkscape command valid for v1.0.1
+  inkscape -o <output file> --export-type=<[svg,png,ps,eps,pdf,emf,wmf,xaml]> -D -d <int dpi> <input file>
+  i.e.: inkscape -o 01.base --export-type=png -D -d 400 01.base.svg
 
 
 REFERENCES:
