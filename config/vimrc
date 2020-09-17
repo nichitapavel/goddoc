@@ -1,3 +1,12 @@
-# copy to ~/.vimrc and remove this line
+"" copy to ~/.vimrc and remove this line
+" :helptags ALL errorr -> https://vi.stackexchange.com/questions/17210/generating-help-tags-for-packages-that-are-loaded-by-vim-8s-package-management
+" plugins config -> https://gist.github.com/manasthakur/ab4cf8d32a28ea38271ac0d07373bb53
+" plugins ocnfig -> https://dev.to/iggredible/how-to-use-vim-packages-3gil
+" show whitespaces -> https://github.com/ntpeters/vim-better-whitespace
+" use :EnableWhitespace to highlight
 set visualbell
 set number 
+" supposedly enables by default :EnableWhitespace but not for me
+" issue in github -> https://github.com/ntpeters/vim-better-whitespace/issues/142
+let g:better_whitespace_enabled = 1
+" in vim-home-folder.tar.xz there are plugins and stuff, tracked by Git LFS
