@@ -13,6 +13,13 @@ end
 # Add ~/.local/bin to PATH
 # Why "--is-login" -> don't really know
 if status --is-login
-    set -x PATH ~/.local/bin $PATH
+  set -x PATH ~/.local/bin $PATH
 end
 
+# Set ANDROID_HOME environment variables
+if status --is-login
+  # is it empty?                 does it exist?
+  if set -q -- $ANDROID_HOME; or set -q ANDROID_HOME
+    set -x ANDROID_HOME /opt/android
+  end
+end
