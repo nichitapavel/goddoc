@@ -1,5 +1,5 @@
-# Clone 
+# Clone
 # https://github.com/nichitapavel/Extract
-# or 
+# or
 # https://github.com/xvoland/Extract
 # and make a symbolic link to extract.fish
