@@ -1,0 +1,42 @@
+# https://git-scm.com/docs/git-config#Documentation/git-config.txt-credentialusername
+# Add this for each git account you have
+[credential "https://github.com"]
+  useHttpPath = true
+  username = nichitapavel
+
+# https://git-scm.com/docs/git-config#Documentation/git-config.txt-alias
+[alias]
+  plog = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  last-commit = log -n 1 --pretty=format:"%h"
+
+# https://git-scm.com/docs/git-config#Documentation/git-config.txt-coreeol
+[core]
+  eol = lf
+  excludesfile = ~/.config/git/ignore
+  attributesFile = ~/.config/git/attributes
+  whitespace = trailing-space,space-before-tab,tab-in-indent
+
+# https://git-scm.com/docs/git-config#Documentation/git-config.txt-username
+[user]
+  name = Pavel Nichita @ home desktop
+  email = <some_email@here>
+
+# https://git-scm.com/docs/git-config#Documentation/git-config.txt-pushdefault
+[push]
+  default = simple
+
+# https://git-scm.com/docs/git-config#Documentation/git-config.txt-pull
+[pull]
+  rebase = false
+
+# https://git-scm.com/docs/git-config#Documentation/git-config.txt-greplineNumber
+[grep]
+  lineNumber = true
+
+# LFS = Large File Storage
+# https://git-lfs.github.com/
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
