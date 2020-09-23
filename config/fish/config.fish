@@ -16,6 +16,8 @@ if status --is-login
   set -x PATH ~/.local/bin $PATH
 end
 
+# TODO there seems to be a problem with desktop session
+# at my work pc, maybe it should be --is-interactive?
 # Set ANDROID_HOME environment variables
 if status --is-login
   # is it empty?                 does it exist?
