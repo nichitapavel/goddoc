@@ -5,8 +5,8 @@
 " show whitespaces -> https://github.com/ntpeters/vim-better-whitespace
 " use :EnableWhitespace to highlight
 set visualbell
-set number 
-" supposedly enables by default :EnableWhitespace but not for me
+set number
+" enables by default :EnableWhitespace (had some issues at the beginning)
 " issue in github -> https://github.com/ntpeters/vim-better-whitespace/issues/142
 let g:better_whitespace_enabled = 1
 " in vim-home-folder.tar.xz there are plugins and stuff, tracked by Git LFS
