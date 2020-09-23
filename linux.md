@@ -20,7 +20,7 @@ Remove the **Swap**:
   - ```sudo parted -l```: manage unassigned disk space (in case swap was a partition)
 
 
-### Environment variables
+### Environment variables [1]
 In a shell, a shell variable is NOT an environment variable until is exported.
 
 - **/etc/environment**: system-wide environment variables, consists of assignment expressions (one per line and is not a script).
@@ -32,3 +32,7 @@ In a shell, a shell variable is NOT an environment variable until is exported.
 - **/etc/profile**: is not recommended to edit this file, better use **/etc/profile.d/<something>.sh**.
 - **/etc/default/locale**: locale system-wide, there is no reason to edit this file.
 - **/etc/bash.bashrc**, **~/.bashrc**, **~/.bash_profile**, and **~/.bash_login**: works for `bash`, but ONLY `bash`.
+
+
+REFERENCES:
+[1] - https://help.ubuntu.com/community/EnvironmentVariables#Persistent_environment_variables
