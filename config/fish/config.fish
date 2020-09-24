@@ -18,10 +18,10 @@ end
 
 # TODO there seems to be a problem with desktop session
 # at my work pc, maybe it should be --is-interactive?
-# Set ANDROID_HOME environment variables
+# Set ANDROID_SDK_ROOT environment variables
 if status --is-login
   # is it empty?                 does it exist?
-  if set -q -- $ANDROID_HOME; or set -q ANDROID_HOME
-    set -x ANDROID_HOME /opt/android
+  if set -q -- $ANDROID_SDK_ROOT; or set -q ANDROID_SDK_ROOT
+    set -x ANDROID_SDK_ROOT /opt/android
   end
 end
