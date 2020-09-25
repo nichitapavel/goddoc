@@ -1,3 +1,4 @@
+# Launchpad OpenSCAD (low chances to get latest version)
 # https://bugs.launchpad.net/ubuntu/+source/openscad/+bug/1766555/comments/6
 #
 # Auto:
@@ -9,3 +10,12 @@
 
 deb http://ppa.launchpad.net/openscad/releases/ubuntu bionic main
 # deb-src http://ppa.launchpad.net/openscad/releases/ubuntu bionic main
+
+# Nightly builds of OpenSCAD
+# http://www.openscad.org/downloads.html#linux
+#
+# Manual:
+# sudo vim openscad.list -> add repositories location, save and quit.
+# sudo apt-key --keyring /etc/apt/trusted.gpg.d/openscad.gpg add openscad-nightly.pub
+
+deb https://download.opensuse.org/repositories/home:/t-paul/xUbuntu_18.04/ ./
