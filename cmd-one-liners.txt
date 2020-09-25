@@ -25,4 +25,3 @@ REFERENCES:
 [1] http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_03.html
 [2] https://www.tldp.org/LDP/abs/html/comparison-ops.html
 [3] https://www.cyberciti.biz/faq/unix-howto-read-line-by-line-from-file/
-

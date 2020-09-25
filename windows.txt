@@ -1,0 +1,15 @@
+Windows command line tips
+=========================
+
+General append to get usage help for a command:
+  <command> /?
+Get detailed system information [1]:
+  systeminfo
+Get/set power properties [1]:
+  powercfg
+Sync your new MicrosoftAccount password to your device [2]:
+  runas /u:[my account]@outlook.com cmd.exe
+
+REFERENCES:
+[1] - https://www.makeuseof.com/tag/15-cmd-commands-every-windows-user-know/
+[2] - https://answers.microsoft.com/en-us/windows/forum/all/force-refresh-sync-of-microsoft-account-password/d7bddb0d-663f-4775-9593-ce21b17ca800?auth=1

@@ -16,19 +16,19 @@ Set a remote branch for the current branch:
   i.e.: git branch --set-upstream=origin master
   git push --set-upstream=origin <branch name>
   i.e.: git push --set-upstream origin master
-Git config credentials:
-  git config --global user.name "Pavel Nichita"
-  git config --global user.email you@example.com
-Git push/pull settings only affects current branch:
-  git config --global push.default simple
 Clean repository forcefully off all files and directories that are not tracked, ignored files too:
   git clean -xdf
+Clean changes to all tracked files:
+  git checkout -f
+Reset repo to a specific commit (removes any post commits):
+  git reset <commit>
+  i.e.: git reset 8c350d9
 Change a branch name (2nd example for current branch):
   git branch -m <oldname> <newname>
   git branch -m <newname>
-List all locally available branches: 
+List all locally available branches:
   git branch -l
-List all locally and remotely available branches: 
+List all locally and remotely available branches:
   git branch -a
 Delete  a branch that was fully merged into another:
   git branch -d <branch name>
@@ -56,9 +56,23 @@ Show difference of the same file from two branches [5]:
   i.e.: git diff master feature-01 -- main.py
 
 
+git config
+==========
+Git config credentials:
+  git config --global user.name "Pavel Nichita"
+  git config --global user.email you@example.com
+Git push/pull settings only affects current branch:
+  git config --global push.default simple
+Git global repo end of line character:
+  # these two can get in conflict [6]
+  git config --global core.eol lf
+  git config --global core.autocrlf input
+
+
 REFERENCES:
 [1] - https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line
 [2] - https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase
 [3] - https://linuxize.com/post/change-git-commit-message/
 [4] - https://stackoverflow.com/questions/7124914/how-to-search-a-git-repository-by-commit-message#answer-7124949
 [5] - https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches#answer-4099805
+[6] - https://git-scm.com/docs/git-config#Documentation/git-config.txt-coreeol

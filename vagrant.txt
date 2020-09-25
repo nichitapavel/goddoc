@@ -3,4 +3,3 @@ Vagrant - virtual machines manager, can be used with virtualbox, vmware and othe
 
 Add vagrant autocompletion to bash:
   ln -s /opt/vagrant/embedded/gems/2.2.3/gems/vagrant-2.2.3/contrib/bash/completion.sh /etc/bash_completion.d/vagrant
-

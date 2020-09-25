@@ -21,4 +21,3 @@ REFERENCES:
 ===========
 [1] https://www.cyberciti.biz/security/nmap-command-examples-tutorials/
 [2] https://nmap.org/book/host-discovery-controls.html
-

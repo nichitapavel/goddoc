@@ -1,10 +1,18 @@
 Shell/Bash or other terminal commands that currently do not deserver a separate file!
 
 Compress something using multiple cores [1]:
+  **Format tar.xz**
   compress with 4 cores                 : tar -cf - <something> | xz --threads=4 > <name>.tar.xz
   compress with all cores               : tar -cf - <something/> | xz --threads=0 > <name>.tar.xz
   compress multiple directories or files: tar -cf - <dir1/> <dir2/file1> <file2> | xz --threads=0 > <name>.tar.xz
   i.e.: tar -cf - snap/ Downloads/image.jpg examples.desktop | xz --threads=0 > just_for_fun.tar.xz
+  **Format tar.gz [8]:**
+  compress with all cores by defualt    : tar cf - <something> | pigz > <name>.tar.gz
+  compress wiht 4 cores                 : tar cf - <something> | pigz -p 4 > <name>.tar.gz
+Parallize bash, inkscape export [7]:
+  # man pages have for loops examples
+  # inkscape command valid for v0.92
+  parallel inkscape -z -f {} -d 400 -e {.}.png ::: *.svg
 Find ip/dns name from an dns name/ip:
   nslookup <ip/dns name> [<dns server>]
   host <ip/dns name>
@@ -22,7 +30,7 @@ Find a file (text or binary) in the system:
         sudo find / -type f -name microvolts
 Output/read from the line <x> till end of file:
   tail -n +<line number> <file>
-  i.e.: tail -n +5 /etc/ucf.conf 
+  i.e.: tail -n +5 /etc/ucf.conf
 List files of a installed package:
   dpkg -L <package>
   i.e.: dpkg -L poppler-utils
@@ -39,8 +47,8 @@ Safely create a temporary file:
   mktemp
 Safely create a temporary directory:
   mktemp -d
-List of files/directories recursively and planar in current location:
-  tree -fi --noreport
+List of files/directories recursively and planar in current location (for hidden files: -a):
+  tree -fia --noreport
 Compress into .zip a directory:
   zip -r <archive>.zip <directory>
   i.e.: zip -r a8.zip 20190403_rar/
@@ -67,9 +75,59 @@ Change your default shell [2]:
      2. usermod -s /usr/bin/fish $USER
 Close a frozen ssh connection [3]:
   hit "Enter" and type "~."
+Generate a ssh key MD5 fingerprint (ala github) [4]:
+  ssh-keygen -l -E md5 -f ~/.ssh/id_rsa.pub
+Fancy system info (install with apt):
+  neofetch
+List screen session:
+  screen -list
+Create a screen session with custom id:
+  screen -S training
+Share terminal sessions with screen (same user):
+  1º user creates screen session         : screen
+  2º user connect to the screen session  : screen -x <session id>
+  Use previous commands (-list & -S) for easier session management.
+  For multi user support check [5] and [6].
+List environment variables:
+  env
+Remove an environment variable:
+  unset <variable>
+  i.e.: unset MAKEFLAGS
+System resources usage info:
+  /usr/bin/landscape-sysinfo
+Make symbolic links:
+  ln -sr <target> <destination>
+  cp -s <target> <destination>    # creates links only in current directory
+  i.e.:
+    ln -s linux.md ../.
+    cp -s goddoc/linux.md .
+See data transfers status (maybe more stuff and is a bit ugly):
+  watch lsof <directory>
+  i.e.: watch lsof /tmp/tmp.RLuQ51rVRW/
+Resize a photo to 25% of original [9]:
+  convert <input.jpg> -resize 25% <output.jpg>
+Inkscape export to png with dpi of 400 only draw area:
+  # man pages have for loops examples
+  # inkscape command valid for v1.0.1
+  inkscape -o <output file> --export-type=<[svg,png,ps,eps,pdf,emf,wmf,xaml]> -D -d <int dpi> <input file>
+  i.e.: inkscape -o 01.base --export-type=png -D -d 400 01.base.svg
+Replace <X> with <Y> in a file [10]:
+  sed -i 's/<X>/<Y>/g' <some file>
+  i.e.: sed -i 's/bionic/focal/g' /etc/apt/sources.list
+Open a file explorer from terminal (ubuntu) [11]:
+  nautilus <path to directory>
+  i.e.: nautilus .   -> open current directory
 
 
 REFERENCES:
 [1] https://askubuntu.com/questions/258202/multi-core-compression-tools#answer-858828
 [2] https://www.tecmint.com/change-a-users-default-shell-in-linux/
 [3] https://superuser.com/questions/467398/how-do-i-exit-an-ssh-connection#answer-1251011
+[4] https://superuser.com/questions/421997/what-is-a-ssh-key-fingerprint-and-how-is-it-generated
+[5] https://wiki.networksecuritytoolkit.org/index.php/HowTo_Share_A_Terminal_Session_Using_Screen
+[6] https://possiblelossofprecision.net/?p=1993
+[7] https://www.gnu.org/software/parallel/parallel_tutorial.html
+[8] https://stackoverflow.com/questions/12313242/utilizing-multi-core-for-targzip-bzip-compression-decompression#answer-12320421
+[9] https://www.howtogeek.com/109369/how-to-quickly-resize-convert-modify-images-from-the-linux-terminal/
+[10] https://linuxconfig.org/how-to-upgrade-ubuntu-to-20-04-lts-focal-fossa#h4-1-change-your-sources
+[11] https://askubuntu.com/questions/8580/opening-the-file-browser-from-terminal#answer-8583
