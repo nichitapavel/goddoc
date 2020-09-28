@@ -6,6 +6,11 @@
 # status is-interactive: returns 0 if fish is interactive - that is, connected to a keyboard.
 # status is-login: returns 0 if fish is a login shell - that is, if fish should perform login tasks such as setting up the PATH
 # still don't know what's the real difference, physically with the pc "is-interactive" seems to work better.
+# Based on my testing, you are safe to use "is-interactive" always. These are the casuistics:
+# with GUI: login - no, interactive - yes
+# terminal (ctrl + alt + f2): login - yes, interactive - yes
+# ssh: login - yes, interactive - yes
+# invoking child fish shells will only be "interactive"
 
 # These cmd can be replaced with fish functions
 # Why "--is-interactive" -> don't really know
