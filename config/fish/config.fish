@@ -28,3 +28,10 @@ if status is-interactive
     set -x ANDROID_SDK_ROOT /opt/android
   end
 end
+
+# https://github.com/pyenv/pyenv/issues/32
+# Load pyenv automatically by appending
+# the following to ~/.config/fish/config.fish:
+set -x PATH "$HOME/.pyenv/bin" $PATH
+status is-interactive; and pyenv init - | source
+status is-interactive; and pyenv virtualenv-init - | source
