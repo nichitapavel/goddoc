@@ -22,11 +22,13 @@ Remove the **Swap**:
 
 ### Environment variables [1]
 In a shell, a shell variable is NOT an environment variable until is exported.
+There are `system-wide` variables, for every user in the system and all other stuff that a system has,
+and the `session-wide` variables, for a particular user [3].
 
 - **/etc/environment**: system-wide environment variables, consists of assignment expressions (one per line and is not a script).
 - **/etc/profile.d/\***: system-wide environment variables, available to all sessions and all users on bash and desktop sessions. THE RECOMMENDED WAY for the system.
-- **~/.pam_environment**: specifically meant for setting a user's environment, works like **/etc/environment** (supposedly every shell can use it, but not fish).
-- **~/.profile**: environment variables for user, the recommended way for user environment variables. The BAD: it doesn't work with all shells (fish speciffically, maybe others too).
+- **~/.pam_environment**: session-wide environment variables, specifically meant for setting a user's environment, works like **/etc/environment** (supposedly every shell can use it, but not fish).
+- **~/.profile**: session-wide environment variables, the recommended way for user environment variables. The BAD: it doesn't work with all shells (fish speciffically, maybe others too).
 
 ##### DON'T USE
 - **/etc/profile**: is not recommended to edit this file, better use **/etc/profile.d/<something>.sh**.
@@ -57,3 +59,4 @@ Reads configuration files in this order: /etc/bashrc, ~/.bashrc (valid for bash)
 REFERENCES:
 [1] - https://help.ubuntu.com/community/EnvironmentVariables#Persistent_environment_variables
 [2] - https://net2.com/what-is-the-difference-between-non-login-and-login-non-interactive-and-interactive-shell-sessions-in-linux-ubuntu-debian/
+[3] - https://superuser.com/questions/555081/ubuntu-environment-setting-for-gui-session-or-making-the-same-with-terminal
