@@ -5,7 +5,7 @@
 # Auto:
 # sudo apt install ./packages-microsoft-prod.deb
 #
-# Manual: 
+# Manual:
 # sudo vim microsoft.list -> add repositories location, save and quit.
 # sudo apt-key --keyring /etc/apt/trusted.gpg.d/microsoft.gpg adv --keyserver keyserver.ubuntu.com --recv-keys BC528686B50D79E339D3721CEB3E94ADBE1229CF
 # or

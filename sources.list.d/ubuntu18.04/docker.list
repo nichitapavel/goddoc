@@ -1,6 +1,6 @@
 # https://docs.docker.com/install/linux/docker-ce/ubuntu/
 #
-# Manual: 
+# Manual:
 # sudo vim docker.list -> add repositories location, save and quit.
 # curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key --keyring /etc/apt/trusted.gpg.d/docker.gpg add -
 # or
