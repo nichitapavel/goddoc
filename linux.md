@@ -56,7 +56,16 @@ Reads configuration files in this order: /etc/bashrc, ~/.bashrc (valid for bash)
 - interactive: when a shell session is coupled to a terminal.
 - non interactive: when a shell session is NOT coupled to a terminal.
 
+### Ubuntu 20.04 server suspending [4]
+Appeareantly someone has decided that default behaviour of server version is to go to sleep every 30 minutes more or less.
+To disable it do:
+
+- Create a directory named `sleep.conf.d` in `/usr/lib/systemd/`
+- Copy file `sleep.conf` from `config` directory to `/usr/lib/systemd/sleep.conf.d/`
+
+
 REFERENCES:
 [1] - https://help.ubuntu.com/community/EnvironmentVariables#Persistent_environment_variables
 [2] - https://net2.com/what-is-the-difference-between-non-login-and-login-non-interactive-and-interactive-shell-sessions-in-linux-ubuntu-debian/
 [3] - https://superuser.com/questions/555081/ubuntu-environment-setting-for-gui-session-or-making-the-same-with-terminal
+[4] - http://manpages.ubuntu.com/manpages/focal/man5/systemd-sleep.conf.5.html
