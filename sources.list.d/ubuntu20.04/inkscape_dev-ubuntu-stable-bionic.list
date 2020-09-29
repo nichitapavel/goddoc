@@ -1,0 +1,11 @@
+# https://code.launchpad.net/~inkscape.dev/+archive/ubuntu/stable
+#
+# Auto:
+# sudo add-apt-repository ppa:inkscape.dev/stable
+#
+# Manual:
+# sudo vim inkscape.list -> add repositories location, save and quit.
+# sudo apt-key --keyring /etc/apt/trusted.gpg.d/inkscape.gpg adv --keyserver keyserver.ubuntu.com --recv-keys 22C4850146603F3DB0ED00479DA4BD18B9A06DE3
+
+deb http://ppa.launchpad.net/inkscape.dev/stable/ubuntu focal main
+deb-src http://ppa.launchpad.net/inkscape.dev/stable/ubuntu focal main
