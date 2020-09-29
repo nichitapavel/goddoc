@@ -56,6 +56,7 @@ Reads configuration files in this order: /etc/bashrc, ~/.bashrc (valid for bash)
 - interactive: when a shell session is coupled to a terminal.
 - non interactive: when a shell session is NOT coupled to a terminal.
 
+
 ### Ubuntu 20.04 server suspending [4]
 Appeareantly someone has decided that default behaviour of server version is to go to sleep every 30 minutes more or less.
 To disable it do:
