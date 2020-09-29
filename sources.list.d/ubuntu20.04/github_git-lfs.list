@@ -1,0 +1,8 @@
+# https://packagecloud.io/github/git-lfs/install#manual-deb
+#
+# Manual:
+# sudo vim github_git-lfs.list -> add repositories location, save and quit.
+# sudo apt-key --keyring /etc/apt/trusted.gpg.d/git-lfs.gpg add git-lfs.gpg
+
+deb https://packagecloud.io/github/git-lfs/ubuntu/ focal main
+deb-src https://packagecloud.io/github/git-lfs/ubuntu/ focal main

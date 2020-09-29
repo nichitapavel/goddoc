@@ -5,7 +5,7 @@
 # Auto:
 # sudo apt install ./packages-microsoft-prod.deb
 #
-# Manual:
+# Manual: 
 # sudo vim microsoft.list -> add repositories location, save and quit.
 # sudo apt-key --keyring /etc/apt/trusted.gpg.d/microsoft.gpg adv --keyserver keyserver.ubuntu.com --recv-keys BC528686B50D79E339D3721CEB3E94ADBE1229CF
 # or
@@ -13,4 +13,4 @@
 # or
 # sudo apt-key --keyring /etc/apt/trusted.gpg.d/microsoft.gpg add microsoft.asc
 
-deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
+deb [arch=amd64] https://packages.microsoft.com/ubuntu/20.04/prod focal main
