@@ -1,0 +1,10 @@
+# https://vulkan.lunarg.com/doc/sdk/1.2.148.1/linux/getting_started_ubuntu.html
+#
+# Manual:
+# sudo vim freecad.list -> add repositories location, save and quit.
+# wget -qO - http://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -
+# or
+# sudo apt-key --keyring /etc/apt/trusted.gpg.d/vulkan.gpg add lunarg-signing-key-pub.asc
+
+deb https://packages.lunarg.com/vulkan focal main
+deb-src https://packages.lunarg.com/vulkan focal main
