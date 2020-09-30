@@ -1,12 +1,10 @@
-# This file lists the repositories for Mendeley Desktop.
+# NO URL, got it from .deb installer
 #
-# These repositories should work with most recent Debian/Ubuntu-based Linux
-# distributions.
+# Auto:
+# sudo apt install ./mendel.....deb
 #
-# If you have any problems with Mendeley's Debian/Ubuntu repositories,
-# you can let us know at http://feedback.mendeley.com
-#
-# The distribution name sets the release channel you want to use,
-# which can be either "stable" or "preview"
+# Manual (incomplete):
+# sudo cp mendeleydesktop.list /etc/apt/sources.list.d/.
+# Incomple: I need the key
 
 deb https://desktop-download.mendeley.com/download/apt stable main # disabled on upgrade to focal
