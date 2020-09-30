@@ -20,23 +20,36 @@ if status is-interactive
   abbr --add update-dist "sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt-get autoremove -y && sudo apt-get autoclean"
 end
 
-# Add ~/.local/bin to PATH
+# Add ~/.local/bin and ~/bin to PATH
 # Why "--is-login" -> don't really know
 if status is-login
-  set -x PATH ~/.local/bin $PATH
+  set HOME_BIN ~/bin
+  set HOME_LOCAL_BIN ~/.local/bin
+  if test -d "$HOME_BIN"
+    set -x PATH "$HOME_BIN" $PATH
+  end
+  if test -d "$HOME_LOCAL_BIN"
+    set -x PATH "$HOME_LOCAL_BIN" $PATH
+  end
 end
 
 # Set ANDROID_SDK_ROOT environment variables
 if status is-interactive
-  # is it empty?                 does it exist?
-  if set -q -- $ANDROID_SDK_ROOT; or set -q ANDROID_SDK_ROOT
-    set -x ANDROID_SDK_ROOT /opt/android
+  set ANDROID_PATH /opt/android
+  if test -d "$ANDROID_PATH"
+    # is it empty?                 does it exist?
+    if set -q -- $ANDROID_SDK_ROOT; or set -q ANDROID_SDK_ROOT
+      set -x ANDROID_SDK_ROOT "$ANDROID_PATH"
+    end
   end
 end
 
 # https://github.com/pyenv/pyenv/issues/32
 # Load pyenv automatically by appending
 # the following to ~/.config/fish/config.fish:
-set -x PATH "$HOME/.pyenv/bin" $PATH
-status is-interactive; and pyenv init - | source
-status is-interactive; and pyenv virtualenv-init - | source
+set PYENV_PATH ~/.pyenv/bin
+if test -d "$PYENV_PATH"
+  set -x PATH "$PYENV_PATH" $PATH
+  status is-interactive; and pyenv init - | source
+  status is-interactive; and pyenv virtualenv-init - | source
+end
