@@ -1,0 +1,12 @@
+# This file lists the repositories for Mendeley Desktop.
+#
+# These repositories should work with most recent Debian/Ubuntu-based Linux
+# distributions.
+#
+# If you have any problems with Mendeley's Debian/Ubuntu repositories,
+# you can let us know at http://feedback.mendeley.com
+#
+# The distribution name sets the release channel you want to use,
+# which can be either "stable" or "preview"
+
+deb https://desktop-download.mendeley.com/download/apt stable main # disabled on upgrade to focal
