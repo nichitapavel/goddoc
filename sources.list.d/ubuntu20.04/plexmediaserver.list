@@ -1,3 +1,16 @@
-# When enabling this repo please remember to add the PlexPublic.Key into the apt setup.
+# NO URL, got it from .deb installer
+#
+# Semi-Auto:
+# sudo apt install ./plex.....deb
+# sudo vim plexmediaserver.list -> uncomment the "deb" line
 # wget -q https://downloads.plex.tv/plex-keys/PlexSign.key -O - | sudo apt-key add -
+# or
+# sudo apt-key --keyring /etc/apt/trusted.gpg.d/plex.gpg add PlexSign.key
+#
+# Manual:
+# sudo vim plexmediaserver.list -> add repositories location, save and quit.
+# wget -q https://downloads.plex.tv/plex-keys/PlexSign.key -O - | sudo apt-key add -
+# or
+# sudo apt-key --keyring /etc/apt/trusted.gpg.d/plex.gpg add PlexSign.key
+
 deb https://downloads.plex.tv/repo/deb/ public main
