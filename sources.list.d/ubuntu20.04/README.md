@@ -28,8 +28,8 @@ Sources for ubuntu 20.04
 #### Step by step instructions (custom keychain):
 ```bash
 sudo cp *.list /etc/apt/sources.list.d/.
-sudo cp pin/* etc/apt/preferences.d/.
-for pgp in /pgp/*.pgp; do sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add "$pgp"; done
+sudo cp pin/* /etc/apt/preferences.d/.
+for pgp in ./pgp/*.pgp; do sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add "$pgp"; done
 sudo apt update
 ```
 **NOTE:** when installing packages, some of them, can ask which _source list_ to keep, you can
