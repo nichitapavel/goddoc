@@ -1,10 +1,1 @@
-# NO URL, got it from .deb installer
-#
-# Auto:
-# sudo apt install ./mendel.....deb
-#
-# Manual (incomplete):
-# sudo cp mendeleydesktop.list /etc/apt/sources.list.d/.
-# Incomple: I need the key
-
-deb https://desktop-download.mendeley.com/download/apt stable main # disabled on upgrade to focal
+deb https://desktop-download.mendeley.com/download/apt stable main

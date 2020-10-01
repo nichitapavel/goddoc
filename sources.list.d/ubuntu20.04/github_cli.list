@@ -1,16 +1,2 @@
-# https://github.com/cli/cli/blob/trunk/docs/install_linux.md
-#
-# Semi-Auto:
-# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
-# sudo sudo apt-add-repository https://cli.github.com/packages
-#
-## Why "Semi-Auto" ? It adds the repositories to /etc/apt/sources.list and
-## is better to have it in /etc/apt/sources.list.d/github_cli.list
-## Just do the manual steps.
-#
-# Manual:
-# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
-# sudo cp github_cli.list /etc/apt/sources.list.d/.
-
 deb https://cli.github.com/packages focal main
 # deb-src https://cli.github.com/packages focal main

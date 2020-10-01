@@ -1,10 +1,2 @@
-# https://launchpad.net/~intel-opencl/+archive/ubuntu/intel-opencl
-#
-# Auto:
-# sudo add-apt-repository ppa:intel-opencl/intel-opencl
-#
-# Manual:
-# sudo vim intel.list -> add repositories location, save and quit.
-# sudo apt-key --keyring /etc/apt/trusted.gpg.d/intel.gpg adv --keyserver keyserver.ubuntu.com --recv-keys E75D0B33338407411D357F51B9732172C4830B8F
-
-deb-src http://ppa.launchpad.net/intel-opencl/intel-opencl/ubuntu focal main
+deb http://ppa.launchpad.net/intel-opencl/intel-opencl/ubuntu focal main
+# deb-src http://ppa.launchpad.net/intel-opencl/intel-opencl/ubuntu focal main

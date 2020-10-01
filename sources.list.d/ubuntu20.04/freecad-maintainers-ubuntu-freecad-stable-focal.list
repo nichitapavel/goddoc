@@ -1,11 +1,2 @@
-# https://launchpad.net/~freecad-maintainers/+archive/ubuntu/freecad-stable
-#
-# Auto:
-# sudo add-apt-repository ppa:freecad-maintainers/freecad-stable
-#
-# Manual:
-# sudo vim freecad.list -> add repositories location, save and quit.
-# sudo apt-key --keyring /etc/apt/trusted.gpg.d/freecad.gpg adv --keyserver keyserver.ubuntu.com --recv-keys 83193AA3B52FF6FCF10A1BBF005EAE8119BB5BCA
-
 deb http://ppa.launchpad.net/freecad-maintainers/freecad-stable/ubuntu focal main
-deb-src http://ppa.launchpad.net/freecad-maintainers/freecad-stable/ubuntu focal main
+# deb-src http://ppa.launchpad.net/freecad-maintainers/freecad-stable/ubuntu focal main

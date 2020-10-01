@@ -1,17 +1,3 @@
-# https://code.visualstudio.com/
-# generated when installing vscode from .deb package
-#
-# Auto:
-# sudo apt install ./code_1.49.2-1600965325_amd64.deb
-#
-# Manual:
-# sudo vim vscode.list -> add repositories location, save and quit.
-# sudo apt-key --keyring /etc/apt/trusted.gpg.d/microsoft.gpg adv --keyserver keyserver.ubuntu.com --recv-keys BC528686B50D79E339D3721CEB3E94ADBE1229CF
-# or
-# wget -q -O - https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/microsoft.gpg add -
-# or
-# sudo apt-key --keyring /etc/apt/trusted.gpg.d/microsoft.gpg add microsoft.asc
-
 ### THIS FILE IS AUTOMATICALLY CONFIGURED ###
 # You may comment out this entry, but any other modifications may be lost.
 deb [arch=amd64] http://packages.microsoft.com/repos/vscode stable main

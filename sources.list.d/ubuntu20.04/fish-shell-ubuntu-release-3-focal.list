@@ -1,11 +1,2 @@
-# https://launchpad.net/~fish-shell/+archive/ubuntu/release-3
-#
-# Auto:
-# sudo add-apt-repository ppa:fish-shell/release-3
-#
-# Manual:
-# sudo vim fish3.list -> add repositories location, save and quit.
-# sudo apt-key --keyring /etc/apt/trusted.gpg.d/fish3.gpg adv --keyserver keyserver.ubuntu.com --recv-keys 59FDA1CE1B84B3FAD89366C027557F056DC33CA5
-
 deb http://ppa.launchpad.net/fish-shell/release-3/ubuntu focal main
-deb-src http://ppa.launchpad.net/fish-shell/release-3/ubuntu focal main
+# deb-src http://ppa.launchpad.net/fish-shell/release-3/ubuntu focal main

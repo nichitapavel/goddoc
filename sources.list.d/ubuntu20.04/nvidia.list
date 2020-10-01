@@ -1,11 +1,1 @@
-# https://developer.nvidia.com/cuda-downloads   -> deb(network)
-#
-# Manual:
-# wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-ubuntu1804.pin
-# sudo mv cuda-ubuntu1804.pin /etc/apt/preferences.d/nvidia
-# sudo vim nvidia.list -> add repositories location, save and quit.
-# sudo apt-key --keyring /etc/apt/trusted.gpg.d/nvidia.gpg adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
-# or
-# sudo apt-key --keyring /etc/apt/trusted.gpg.d/nvidia.gpg add nvidia.pub
-
 deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /
