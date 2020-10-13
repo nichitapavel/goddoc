@@ -117,6 +117,14 @@ Replace <X> with <Y> in a file [10]:
 Open a file explorer from terminal (ubuntu) [11]:
   nautilus <path to directory>
   i.e.: nautilus .   -> open current directory
+Compile a c++ file with debug and profile data [12]:
+  gcc -pg test_gprof.c
+Output profile analyze data for c++ with g++ and gprof:
+  -> execute your program to generate profile data:
+    ./a.out 15234536
+  -> generate readable information from profile data:
+    gprof a.out gmon.out > analysis.txt
+  
 
 
 REFERENCES:
@@ -131,3 +139,4 @@ REFERENCES:
 [9] https://www.howtogeek.com/109369/how-to-quickly-resize-convert-modify-images-from-the-linux-terminal/
 [10] https://linuxconfig.org/how-to-upgrade-ubuntu-to-20-04-lts-focal-fossa#h4-1-change-your-sources
 [11] https://askubuntu.com/questions/8580/opening-the-file-browser-from-terminal#answer-8583
+[12] https://www.thegeekstuff.com/2012/08/gprof-tutorial/
