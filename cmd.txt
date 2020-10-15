@@ -13,6 +13,8 @@ Parallize bash, inkscape export [7]:
   # man pages have for loops examples
   # inkscape command valid for v0.92
   parallel inkscape -z -f {} -d 400 -e {.}.png ::: *.svg
+Parallize bash, same program with multiple arguments:
+  parallel ./erasthones {} ::: {1000, 2000, 3000, 4000}
 Find ip/dns name from an dns name/ip:
   nslookup <ip/dns name> [<dns server>]
   host <ip/dns name>
