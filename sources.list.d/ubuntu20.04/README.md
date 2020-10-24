@@ -13,7 +13,7 @@ Sources for ubuntu 20.04
 - copy `.pin` files to `/etc/apt/preferences.d/.` directory
 - Files with extensions `key`, `gpg`, `asc` and `pub` are keys
 - If Key files are not here, they are in `ubuntu18.04` directory
-- `.pgp` files are exported keys from my keychain
+- `.pgp` files are exported keys from my keychain (command `apt-key export "<long id by apt-key list>" > <something>.pgp`)
 - Add keys to the keychain (see `man apt-key`), either `.pgp` or the rest
 - Most probably there will repeated keys, that's because same packages install their's source file when installing a package
 
@@ -168,3 +168,9 @@ or `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add PlexSi
 - `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg adv --keyserver keyserver.ubuntu.com --receive-keys BC528686B50D79E339D3721CEB3E94ADBE1229CF`  
 or `wget -q -O - https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add -`  
 or `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add microsoft.asc`
+
+### [Brave](https://brave.com/linux/)
+**Manual:**
+- `sudo vim brave-browser-release.list` -> add repositories location, save and quit.
+- `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add keys/brave-core.asc`
+or `curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add -`  
