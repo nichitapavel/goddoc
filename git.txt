@@ -26,6 +26,8 @@ Clean changes to all tracked files:
 Reset repo to a specific commit (removes any post commits):
   git reset <commit>
   i.e.: git reset 8c350d9
+Remove a file from staged area, but keep the changes [8]:
+  git reset HEAD <file>
 Change a branch name (2nd example for current branch):
   git branch -m <oldname> <newname>
   git branch -m <newname>
@@ -49,7 +51,7 @@ Change the latest commit message (BE CARREFULL WITH HISTORY CHANGES, THINK ABOUT
   git commit --amend -m "<message>"
   i.e.: git commit --amend -m "-DVFS"
 See diff of staged code (added but not committed):
-  git diff --staged
+  eit diff --staged
 Add to stage only tracked file:
   git add -u
 Search through the git log [4]:
@@ -80,3 +82,4 @@ REFERENCES:
 [5] - https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches#answer-4099805
 [6] - https://git-scm.com/docs/git-config#Documentation/git-config.txt-coreeol
 [7] - https://help.github.jp/enterprise/2.11/user/articles/changing-a-remote-s-url/
+[8] - https://docs.gitlab.com/ee/university/training/topics/unstage.html
