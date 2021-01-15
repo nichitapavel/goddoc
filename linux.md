@@ -36,6 +36,22 @@ and the `session-wide` variables, for a particular user [3].
 - **/etc/bash.bashrc**, **~/.bashrc**, **~/.bash_profile**, and **~/.bash_login**: works for `bash`, but ONLY `bash`.
 
 
+##### Possible environment variables default locations
+- /etc/environment
+- /etc/profile
+- /etc/profile.d/*
+- /etc/bash.bashrc
+- /etc/security/pam_env.conf
+- /etc/locale.conf  # packages specific
+- ~/.pam_environment
+- ~/.bash_profile
+- ~/.bashrc
+- ~/.bash_login
+- ~/.profile
+- ~/.xinitrc
+- ~/.config/environment.d/*
+
+
 ### Understandig shells [2]
 
 Important: you can have multiple "forms" of a shell, (non) login, (non) interactive, graphicall, etc.
