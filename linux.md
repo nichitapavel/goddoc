@@ -104,3 +104,4 @@ REFERENCES:
 [4] - http://manpages.ubuntu.com/manpages/focal/man5/systemd-sleep.conf.5.html
 [5] - http://blackhold.nusepas.com/2015/08/06/ping-icmp-open-socket-operation-not-permitted/
 [6] - https://forums.balena.io/t/ping-devices-on-the-local-network-via-hostname/2082
+[7] - https://apple.stackexchange.com/questions/326266/in-terminal-scrolling-prints-weird-characters
