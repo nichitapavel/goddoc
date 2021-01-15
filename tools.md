@@ -15,3 +15,4 @@ Various tools that need to be installed and are usefull
 |fd|fd-find|a more straightforward find tool|Ubuntu20.04|
 |neofetch|neofetch|a fancy system info|debian 9 stretch|
 |RSS Validator|Web|http://validator.w3.org/feed/check.cgi|any|
+|pdfunite and others|poppler-utils|PDF utilities|Ubuntu20.04|
