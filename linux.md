@@ -91,6 +91,12 @@ Install the `libnss-mdns` package or equivalent for your distribution
 - `sudo apt install libnss-mdns`
 
 
+### terminal and mouse (usually wheel: scrolling) prints weird characters [7]
+Most probably somehow you enabled graphics mode in terminal (some apps support it for mouse),
+type in terminal:
+- `reset`
+
+
 REFERENCES:
 [1] - https://help.ubuntu.com/community/EnvironmentVariables#Persistent_environment_variables
 [2] - https://net2.com/what-is-the-difference-between-non-login-and-login-non-interactive-and-interactive-shell-sessions-in-linux-ubuntu-debian/
