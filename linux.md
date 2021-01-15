@@ -81,8 +81,20 @@ To disable it do:
 - Copy file `sleep.conf` from `config` directory to `/usr/lib/systemd/sleep.conf.d/`
 
 
+### ping: socket: Operation not permitted [5]
+Possibly some distro messup, to fix add the sticky bit:
+- `sudo chmod u+s /bin/ping`
+
+
+### avahi mDNS doesn't work [6]
+Install the `libnss-mdns` package or equivalent for your distribution
+- `sudo apt install libnss-mdns`
+
+
 REFERENCES:
 [1] - https://help.ubuntu.com/community/EnvironmentVariables#Persistent_environment_variables
 [2] - https://net2.com/what-is-the-difference-between-non-login-and-login-non-interactive-and-interactive-shell-sessions-in-linux-ubuntu-debian/
 [3] - https://superuser.com/questions/555081/ubuntu-environment-setting-for-gui-session-or-making-the-same-with-terminal
 [4] - http://manpages.ubuntu.com/manpages/focal/man5/systemd-sleep.conf.5.html
+[5] - http://blackhold.nusepas.com/2015/08/06/ping-icmp-open-socket-operation-not-permitted/
+[6] - https://forums.balena.io/t/ping-devices-on-the-local-network-via-hostname/2082
