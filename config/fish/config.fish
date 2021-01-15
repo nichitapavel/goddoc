@@ -53,3 +53,13 @@ if test -d "$PYENV_PATH"
   status is-interactive; and pyenv init - | source
   status is-interactive; and pyenv virtualenv-init - | source
 end
+
+# Load environment modules if available
+# More information https://modules.readthedocs.io/en/latest/index.html
+# Mostly used in hpc environments
+if status is-interactive
+  set ENV_MODULES /opt/Modules
+  if test -d "$ENV_MODULES"
+    source $ENV_MODULES/init/fish
+  end
+end
