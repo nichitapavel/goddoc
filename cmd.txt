@@ -36,6 +36,9 @@ Output/read from the line <x> till end of file:
 List files of a installed package:
   dpkg -L <package>
   i.e.: dpkg -L poppler-utils
+List package from which the file is part of:
+  dpkg -S <file>
+  i.e.: dpkg -S /usr/bin/cpufreq-set
 Files with files lists (mind the redundency):
   In _/var/lib/dpkg/info/_ you can find _.list_ files with
   information that lists files of a installed package,
