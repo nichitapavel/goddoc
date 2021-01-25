@@ -13,7 +13,10 @@
 [core]
   eol = lf
   excludesfile = ~/.config/git/ignore
-  attributesFile = ~/.config/git/attributes
+  # Have to do something about this, global git lfs config is messing with
+  # all git repositories, most important the ones I don't manage.
+  # Most probably I just add this for each repo instead
+  # attributesFile = ~/.config/git/attributes
   whitespace = trailing-space,space-before-tab,tab-in-indent
 
 # https://git-scm.com/docs/git-config#Documentation/git-config.txt-username
