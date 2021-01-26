@@ -97,6 +97,11 @@ type in terminal:
 - `reset`
 
 
+### Network doesn't work but device recognized:
+For me it happened on Rock960, usb-c ethernet plugged it, recognized but not network, try and do a `sudo dhclient`.  
+The referece [8] explains setting up wifi in terminal, but doing this my usb-c ethernet started to work.
+
+
 REFERENCES:
 [1] - https://help.ubuntu.com/community/EnvironmentVariables#Persistent_environment_variables
 [2] - https://net2.com/what-is-the-difference-between-non-login-and-login-non-interactive-and-interactive-shell-sessions-in-linux-ubuntu-debian/
@@ -105,3 +110,4 @@ REFERENCES:
 [5] - http://blackhold.nusepas.com/2015/08/06/ping-icmp-open-socket-operation-not-permitted/
 [6] - https://forums.balena.io/t/ping-devices-on-the-local-network-via-hostname/2082
 [7] - https://apple.stackexchange.com/questions/326266/in-terminal-scrolling-prints-weird-characters
+[8] - http://sirlagz.net/2012/08/27/how-to-use-wpa_cli-to-connect-to-a-wireless-network/

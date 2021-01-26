@@ -19,3 +19,4 @@ Various tools that need to be installed and are usefull
 |avahi-\*|avahi-utils|Add mDNS (use hostname.local instead of ip)|Ubuntu20.04, Debian 9 Stretch|
 |cpupower|linux-tools-common, linux-cpupower|CPU and more related stuff (Intel or x86_64 only)|ubuntu20.04, Debian 9 Stretch|
 |cpufreq-set|cpufrequtils|CPU related stuff|Ubuntu20.04, Debian 9 Stretch|
+|do-release-upgrade|update-manager-core|Provides scripts to dist-upgrade your system|Ubuntu18.04|
