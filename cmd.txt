@@ -132,7 +132,8 @@ Output profile analyze data for c++ with g++ and gprof:
     ./a.out 15234536
   -> generate readable information from profile data:
     gprof a.out gmon.out > analysis.txt
-  
+Show all services available:
+  systemctl list-units --type=service --all
 
 
 REFERENCES:
