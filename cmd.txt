@@ -73,6 +73,9 @@ Find available manual pages for a package (extended vs previous cmd):
 Open a specific manual page:
   man <manual page> <package>
   i.e.: man 7 man
+Add user to another group [13]:
+  usermod -aG <group> <user>
+  i.e.: usermod -aG sudo pavel  # adds user pavel to sudo(ers) group
 Change your default shell [2]:
   1. check your desired shell is available in /etc/shells
   2. Two available commands:
@@ -145,3 +148,4 @@ REFERENCES:
 [10] https://linuxconfig.org/how-to-upgrade-ubuntu-to-20-04-lts-focal-fossa#h4-1-change-your-sources
 [11] https://askubuntu.com/questions/8580/opening-the-file-browser-from-terminal#answer-8583
 [12] https://www.thegeekstuff.com/2012/08/gprof-tutorial/
+[13] https://linuxize.com/post/how-to-add-user-to-sudoers-in-ubuntu/
