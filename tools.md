@@ -21,3 +21,4 @@ Various tools that need to be installed and are usefull
 |cpufreq-set|cpufrequtils|CPU related stuff|Ubuntu20.04, Debian 9 Stretch|
 |do-release-upgrade|update-manager-core|Provides scripts to dist-upgrade your system|Ubuntu18.04|
 |parallel|parallel|Run simple tasks in parallel|Ubuntu20.04|
+|tsp|task-spooler|Send things to a queue to run them|Ubuntu20.04|
