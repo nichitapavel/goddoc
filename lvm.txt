@@ -47,6 +47,8 @@ Add more storage to a logical volume:
         +5G = relative resize, add to current size 5 gigas more
         --resizefs = autorezise the filesystem
   lvresize -L +5G --resizefs vg1/packages
+Just use all available space:
+  sudo lvextend -l +100%FREE <volume group>/<logical volume>
 
 Not lvm commands, but related:
 Format a **lg** in ext4 format:
