@@ -47,7 +47,7 @@ Add more storage to a logical volume:
         +5G = relative resize, add to current size 5 gigas more
         --resizefs = autorezise the filesystem
   lvresize -L +5G --resizefs vg1/packages
-Just use all available space:
+Just use all available space [3]:
   sudo lvextend -l +100%FREE <volume group>/<logical volume>
 
 Not lvm commands, but related:
@@ -70,3 +70,4 @@ Check logical volume available/used space:
 
 [1] - https://www.digitalocean.com/community/tutorials/an-introduction-to-lvm-concepts-terminology-and-operations
 [2] - https://www.digitalocean.com/community/tutorials/how-to-use-lvm-to-manage-storage-devices-on-ubuntu-18-04
+[3] - https://access.redhat.com/solutions/44089
