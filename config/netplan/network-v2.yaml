@@ -1,0 +1,17 @@
+# Let networkd manage all devices on this system
+# Allows for computer to get an IP without user loging
+# dhcp4-overrides/use-dns allows to discard dns 
+#  servers received from DHCP and use the one specified
+#  in nameservers/addresses instead.
+#  Currently this works only with renderer: networkd
+# https://netplan.io/reference/#dhcp-overrides
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    eno1:
+      dhcp4: true
+      dhcp4-overrides:
+        use-dns: false 
+      nameservers:
+        addresses: [192.168.1.10]
