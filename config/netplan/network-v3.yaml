@@ -1,0 +1,10 @@
+# Let NetworkManager manage all devices on this system
+network:
+  version: 2
+  renderer: NetworkManager
+  wifis:
+    wlp2s0:
+      access-points:
+        "Wifi name":
+          password: "Password plain text"
+      dhcp4: yes
