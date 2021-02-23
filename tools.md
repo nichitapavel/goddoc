@@ -1,7 +1,7 @@
 Various tools that need to be installed and are usefull
 =======================================================
 
-|tool|Package|Description|Distribution|
+|Tool|Package|Description|Distribution|
 |----|-------|-----------|------------|
 |perf|linux-tools-common|more info needed|Ubuntu18.04|
 |cpulimit|cpulimit|set's a upper limit to use of cpu for a proccess|Ubuntu18.04|
@@ -24,3 +24,10 @@ Various tools that need to be installed and are usefull
 |tsp|task-spooler|Send things to a queue to run them|Ubuntu20.04|
 |nethogs|nethogs|network bandwidth per process|Ubuntu20.04|
 |ssh-audit|ssh-audit|Is your ssh config good? Audit!|Raspbian 10 buster|
+
+Tools that posibly I will use at some date
+==========================================
+
+|Tool|Description|
+|realm|Join linux servers to Active Directory|
+|Ansible|Manage software and configuration of linux servers in bulk|
