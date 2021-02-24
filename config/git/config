@@ -19,6 +19,10 @@
   # attributesFile = ~/.config/git/attributes
   whitespace = trailing-space,space-before-tab,tab-in-indent
 
+# rename the default branch for all new repositories
+[init]
+  defaultBranch = main
+
 # https://git-scm.com/docs/git-config#Documentation/git-config.txt-username
 [user]
   name = Pavel Nichita @ home desktop
