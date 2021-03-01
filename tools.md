@@ -24,6 +24,7 @@ Various tools that need to be installed and are usefull
 |tsp|task-spooler|Send things to a queue to run them|Ubuntu20.04|
 |nethogs|nethogs|network bandwidth per process|Ubuntu20.04|
 |ssh-audit|ssh-audit|Is your ssh config good? Audit!|Raspbian 10 buster|
+|landscape-info|landscape-client|System usage information|Ubuntu20.04|
 
 Tools that posibly I will use at some date
 ==========================================
