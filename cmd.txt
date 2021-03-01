@@ -134,6 +134,9 @@ Output profile analyze data for c++ with g++ and gprof:
     gprof a.out gmon.out > analysis.txt
 Show all services available:
   systemctl list-units --type=service --all
+Kill process by name:
+  pkill <name>
+  i.e.: pkill firefox
 
 
 REFERENCES:
