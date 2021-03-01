@@ -137,6 +137,8 @@ Show all services available:
 Kill process by name:
   pkill <name>
   i.e.: pkill firefox
+Show hardware info of your memory (dmidecode can show more info):
+  sudo dmidecode -t memory
 
 
 REFERENCES:
