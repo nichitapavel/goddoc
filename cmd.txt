@@ -139,6 +139,9 @@ Kill process by name:
   i.e.: pkill firefox
 Show hardware info of your memory (dmidecode can show more info):
   sudo dmidecode -t memory
+Download a file with wget with a cookie in the header:
+  wget --no-cookies --header "Cookie: <name>=<cookie>" <url>
+  i.e.: wget --no-cookies --header "Cookie: session=aOasdqwroOJOIJpljhFPIAUSdf908y12309j0ovwcadsadasdasdRQ==" http://github.com/something/0728c036fb47b000
 
 
 REFERENCES:
