@@ -174,3 +174,8 @@ or `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add micros
 - `sudo vim brave-browser-release.list` -> add repositories location, save and quit.
 - `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add keys/brave-core.asc`
 or `curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add -`  
+
+### [Speedtest](https://www.speedtest.net/apps/cli#ubuntu)
+**Manual:**
+- `sudo vim speedtest.list` -> add repositories location, save and quit.
+- `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg adv --keyserver keyserver.ubuntu.com --receive-keys 379CE192D401AB61`
