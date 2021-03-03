@@ -142,7 +142,7 @@ Show hardware info of your memory (dmidecode can show more info):
 Download a file with wget with a cookie in the header:
   wget --no-cookies --header "Cookie: <name>=<cookie>" <url>
   i.e.: wget --no-cookies --header "Cookie: session=aOasdqwroOJOIJpljhFPIAUSdf908y12309j0ovwcadsadasdasdRQ==" http://github.com/something/0728c036fb47b000
-Allow a user to execute sudo commands with "sudo" preffix [14]:
+Allow a user to execute sudo commands with "sudo" password [14]:
   add in folder /etc/sudoers.d/ a file with this line:
   `<user> ALL=(ALL) NOPASSWD: ALL`
   i.e.: file **/etc/sudoers.d/001** with content `pavel ALL=(ALL) NOPASSWD: ALL`
