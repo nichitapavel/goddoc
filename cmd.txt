@@ -146,6 +146,10 @@ Allow a user to execute sudo commands without "sudo" password [14]:
   add in folder /etc/sudoers.d/ a file with this line:
   `<user> ALL=(ALL) NOPASSWD: ALL`
   i.e.: file **/etc/sudoers.d/001** with content `pavel ALL=(ALL) NOPASSWD: ALL`
+Connect to a wifi using NetworkManager [15, 16]:
+  nmcli device wifi connect <ssid> password <password> bssid <bssid number>
+  i.e.: nmcli device wifi connect "Awesome&Wifi" password "with&awesomepassword"
+  note: you can also use `nmtui`
 
 
 REFERENCES:
@@ -163,3 +167,5 @@ REFERENCES:
 [12] https://www.thegeekstuff.com/2012/08/gprof-tutorial/
 [13] https://linuxize.com/post/how-to-add-user-to-sudoers-in-ubuntu/
 [14] https://timonweb.com/devops/how-to-enable-passwordless-sudo-for-a-specific-user-in-linux/
+[15] https://nullr0ute.com/2016/09/connect-to-a-wireless-network-using-command-line-nmcli/
+[16] https://unix.stackexchange.com/questions/420640/unable-to-connect-to-any-wifi-with-networkmanager-due-to-error-secrets-were-req
