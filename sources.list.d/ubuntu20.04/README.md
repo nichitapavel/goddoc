@@ -179,3 +179,9 @@ or `curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo
 **Manual:**
 - `sudo vim speedtest.list` -> add repositories location, save and quit.
 - `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg adv --keyserver keyserver.ubuntu.com --receive-keys 379CE192D401AB61`
+
+### [Wine HQ](https://wiki.winehq.org/Ubuntu)
+**Manual:**
+- `sudo vim winehq.list` -> add repositories location, save and quit,  
+or `sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'`
+- `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add winehq.key`
