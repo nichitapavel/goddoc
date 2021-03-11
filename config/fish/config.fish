@@ -17,7 +17,7 @@
 if status is-interactive
   abbr --add ll "ls -hl --group-directories --color=auto"
   abbr --add la "ls -hlA --group-directories --color=auto"
-  abbr --add update-dist "sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt-get autoremove -y && sudo apt-get autoclean"
+  abbr --add update-dist "sudo apt update && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt-get autoremove -y && sudo apt-get autoclean"
 end
 
 # Add ~/.local/bin and ~/bin to PATH
