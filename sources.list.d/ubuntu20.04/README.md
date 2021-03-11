@@ -185,3 +185,11 @@ or `curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo
 - `sudo vim winehq.list` -> add repositories location, save and quit,  
 or `sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'`
 - `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add winehq.key`
+
+### [Wireshark]() [[url 1](https://www.wireshark.org/download.html), [url 2](https://launchpad.net/~wireshark-dev/+archive/ubuntu/stable)]
+**Auto:**
+- `sudo add-apt-repository ppa:wireshark-dev/stable`
+
+**Manual:**
+- `sudo vim wireshark.list` -> add repositories location, save and quit.
+- `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg adv --keyserver keyserver.ubuntu.com --receive-keys A2E402B85A4B70CD78D8A3D9D875551314ECA0F0`
