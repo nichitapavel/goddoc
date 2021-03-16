@@ -25,6 +25,8 @@ Various tools that need to be installed and are usefull
 |nethogs|nethogs|network bandwidth per process|Ubuntu20.04|
 |ssh-audit|ssh-audit|Is your ssh config good? Audit!|Raspbian 10 buster|
 |landscape-info|landscape-client|System usage information|Ubuntu20.04|
+|p7zip-full|7zip for Linux|Ubuntu20.04|
+|ethtool|network tool to manage your network card|Ubuntu20.04|
 
 Tools that posibly I will use at some date
 ==========================================
