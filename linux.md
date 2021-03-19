@@ -101,6 +101,14 @@ type in terminal:
 For me it happened on Rock960, usb-c ethernet plugged it, recognized but not network, try and do a `sudo dhclient`.  
 The referece [8] explains setting up wifi in terminal, but doing this my usb-c ethernet started to work.
 
+### Change hostname
+Specially true if you flash a default image to sd card for a SBC.
+- Rename host with `hostnamectl` tool:
+`sudo hostnamectl set-hostname <name>`
+- Add to the line `127.0.0.1   localhost` in **/etc/hosts** your *<name>*, it will be like this:  
+`127.0.0.1   localhost <name>`.  
+If `127.0....` is not present just add it yourself.
+
 
 REFERENCES:
 [1] - https://help.ubuntu.com/community/EnvironmentVariables#Persistent_environment_variables
