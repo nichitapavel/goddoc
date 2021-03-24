@@ -109,6 +109,8 @@ Specially true if you flash a default image to sd card for a SBC.
 `127.0.0.1   localhost <name>`.  
 If `127.0....` is not present just add it yourself.
 
+### Disable annoying beep sound in terminal [9]:
+Open **/etc/inputrc** and search for `set bell-style none`, either enable it or add it.
 
 REFERENCES:
 [1] - https://help.ubuntu.com/community/EnvironmentVariables#Persistent_environment_variables
@@ -119,3 +121,4 @@ REFERENCES:
 [6] - https://forums.balena.io/t/ping-devices-on-the-local-network-via-hostname/2082
 [7] - https://apple.stackexchange.com/questions/326266/in-terminal-scrolling-prints-weird-characters
 [8] - http://sirlagz.net/2012/08/27/how-to-use-wpa_cli-to-connect-to-a-wireless-network/
+[9] - https://stackoverflow.com/questions/36724209/disable-beep-in-wsl-terminal-on-windows-10
