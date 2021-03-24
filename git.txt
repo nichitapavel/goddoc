@@ -59,6 +59,12 @@ Search through the git log [4]:
 Show difference of the same file from two branches [5]:
   git diff <branch 1> <branch 2> -- <file>
   i.e.: git diff master feature-01 -- main.py
+Add a lightweight tag (just points to a commit):
+  git tag <tag>
+  i.e.: git tag v0.3
+Add a annotated tag (is like a commit, stores more information):
+  git tag -a <tag> -m "<message>"
+  i.e.: git tag -a v0.3 -m "Release nº v0.3"
 
 
 git config
