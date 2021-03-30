@@ -150,6 +150,9 @@ Connect to a wifi using NetworkManager [15, 16]:
   nmcli device wifi connect <ssid> password <password> bssid <bssid number>
   i.e.: nmcli device wifi connect "Awesome&Wifi" password "with&awesomepassword"
   note: you can also use `nmtui`
+Keep only X MB (more or less) of data in journal/system logs [17]:
+  journalctl --vacuum-size=<X>
+  i.e.. journalctl --vacuum-size=200M
 
 
 REFERENCES:
@@ -169,3 +172,4 @@ REFERENCES:
 [14] https://timonweb.com/devops/how-to-enable-passwordless-sudo-for-a-specific-user-in-linux/
 [15] https://nullr0ute.com/2016/09/connect-to-a-wireless-network-using-command-line-nmcli/
 [16] https://unix.stackexchange.com/questions/420640/unable-to-connect-to-any-wifi-with-networkmanager-due-to-error-secrets-were-req
+[17] https://unix.stackexchange.com/questions/139513/how-to-clear-journalctl
