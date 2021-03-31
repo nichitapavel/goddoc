@@ -1,0 +1,15 @@
+InfluxData commands, can be related to influxdb, telegraf, chronograf, kapacitor etc...
+
+Make a full backup of Influxdb database [1]:
+  influx backup backup_$(date '+%Y-%m-%d_%H-%M')
+Find out disk size of a bucket in influxdb:
+  - make a backup
+  - in the backup search for a *.manifest file
+  - this file has the buckets with the sizes, but they are distributed
+  - do a grep search and a sum to find your size:
+    grep bucketName *.manifest -A 3 | grep <bucket name> -A 3 | grep size | cut -c 14-22
+    i.e.: grep bucketName *.manifest -A 3 | grep system-cpu -A 3 | grep size | cut -c 14-22
+
+
+REFERENCES:
+[1] https://docs.influxdata.com/influxdb/v2.0/backup-restore/backup/
