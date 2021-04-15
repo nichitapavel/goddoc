@@ -153,6 +153,11 @@ Connect to a wifi using NetworkManager [15, 16]:
 Keep only X MB (more or less) of data in journal/system logs [17]:
   journalctl --vacuum-size=<X>
   i.e.. journalctl --vacuum-size=200M
+Get only the first/last X characters from a file[]:
+  head -c <X> <file>
+  tail -c <X> <file>
+  i.e.. head -c 25 cmd.txt
+        tail -c 25 cmd.txt
 
 
 REFERENCES:
@@ -173,3 +178,4 @@ REFERENCES:
 [15] https://nullr0ute.com/2016/09/connect-to-a-wireless-network-using-command-line-nmcli/
 [16] https://unix.stackexchange.com/questions/420640/unable-to-connect-to-any-wifi-with-networkmanager-due-to-error-secrets-were-req
 [17] https://unix.stackexchange.com/questions/139513/how-to-clear-journalctl
+[18] https://unix.stackexchange.com/questions/167814/get-first-x-characters-from-the-cat-command
