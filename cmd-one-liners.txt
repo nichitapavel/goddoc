@@ -21,6 +21,8 @@ Update a debian based OS (works better as an alias in ~/.bash_aliases):
   ubuntu 18/debian 9: sudo apt update && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean
 Put yout CPU to 100% (called it a benchmark)
   time seq 1 100000 | parallel echo {}^{} | bc > /dev/null
+Fish, rename the files with padded numbers[4]:
+  set AAA 1; for i in ./*; mv $i segment_(printf "%03d%s" $AAA); set AAA (math $AAA+1); end
 
 
 REFERENCES:
@@ -28,3 +30,4 @@ REFERENCES:
 [1] http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_03.html
 [2] https://www.tldp.org/LDP/abs/html/comparison-ops.html
 [3] https://www.cyberciti.biz/faq/unix-howto-read-line-by-line-from-file/
+[4] https://stackoverflow.com/questions/36281190/how-to-use-fishshell-to-add-numbers-to-files#answer-36285714
