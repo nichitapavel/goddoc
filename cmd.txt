@@ -153,7 +153,7 @@ Connect to a wifi using NetworkManager [15, 16]:
 Keep only X MB (more or less) of data in journal/system logs [17]:
   journalctl --vacuum-size=<X>
   i.e.. journalctl --vacuum-size=200M
-Get only the first/last X characters from a file[]:
+Get only the first/last X characters from a file[18]:
   head -c <X> <file>
   tail -c <X> <file>
   i.e.. head -c 25 cmd.txt
@@ -161,6 +161,9 @@ Get only the first/last X characters from a file[]:
 Get the last columns value with awk [19]:
   <output command> | awk '{print $NF}'
   i.e.:grep Download cmd.txt | awk '{print $NF}'
+Force reinstall a package with apt if is already installed [20]:
+  sudo apt install --reinstall <package>
+  i.e.: sudo apt install --reinstall ./telegraf_1.18.0-1_amd64.deb  => localy available package
 
 
 REFERENCES:
@@ -183,3 +186,4 @@ REFERENCES:
 [17] https://unix.stackexchange.com/questions/139513/how-to-clear-journalctl
 [18] https://unix.stackexchange.com/questions/167814/get-first-x-characters-from-the-cat-command
 [19] https://stackoverflow.com/questions/13046167/printing-the-last-column-of-a-line-in-a-file
+[20] https://www.cyberciti.biz/faq/debian-ubuntu-linux-reinstall-a-package-using-apt-get-command/
