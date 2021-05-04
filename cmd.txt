@@ -158,6 +158,9 @@ Get only the first/last X characters from a file[]:
   tail -c <X> <file>
   i.e.. head -c 25 cmd.txt
         tail -c 25 cmd.txt
+Get the last columns value with awk [19]:
+  <output command> | awk '{print $NF}'
+  i.e.:grep Download cmd.txt | awk '{print $NF}'
 
 
 REFERENCES:
@@ -179,3 +182,4 @@ REFERENCES:
 [16] https://unix.stackexchange.com/questions/420640/unable-to-connect-to-any-wifi-with-networkmanager-due-to-error-secrets-were-req
 [17] https://unix.stackexchange.com/questions/139513/how-to-clear-journalctl
 [18] https://unix.stackexchange.com/questions/167814/get-first-x-characters-from-the-cat-command
+[19] https://stackoverflow.com/questions/13046167/printing-the-last-column-of-a-line-in-a-file
