@@ -54,6 +54,8 @@ Safely create a temporary directory:
   mktemp -d
 List of files/directories recursively and planar in current location (for hidden files: -a):
   tree -fia --noreport
+List of files/directories but exclude these ones [21]:
+  tree -I "config|sources.list.d"
 Compress into .zip a directory:
   zip -r <archive>.zip <directory>
   i.e.: zip -r a8.zip 20190403_rar/
@@ -187,3 +189,4 @@ REFERENCES:
 [18] https://unix.stackexchange.com/questions/167814/get-first-x-characters-from-the-cat-command
 [19] https://stackoverflow.com/questions/13046167/printing-the-last-column-of-a-line-in-a-file
 [20] https://www.cyberciti.biz/faq/debian-ubuntu-linux-reinstall-a-package-using-apt-get-command/
+[21] https://zaiste.net/posts/tree-ignore-directories-patterns/
