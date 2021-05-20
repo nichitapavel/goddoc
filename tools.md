@@ -27,6 +27,7 @@ Various tools that need to be installed and are usefull
 |landscape-info|landscape-client|System usage information|Ubuntu20.04|
 |p7zip-full|7zip for Linux|Ubuntu20.04|
 |ethtool|network tool to manage your network card|Ubuntu20.04|
+|pssh|parallel run commands and copy files to remote device|Ubuntu20.04|
 
 Tools that posibly I will use at some date
 ==========================================

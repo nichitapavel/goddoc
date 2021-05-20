@@ -1,0 +1,17 @@
+# pssh interprets lines that start with # as comments
+
+# as defined in ~/.ssh/config
+desktop-pavel
+
+# with same user as local and ip
+192.168.1.170
+
+# with user and ip
+pavel@192.168.1.201
+
+# with user and mdns
+pavel@desktop-pavel.local
+
+
+# with user and dns
+pavel@desktop-pavel.com
