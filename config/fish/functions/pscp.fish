@@ -1,7 +1,8 @@
 # Defined in - @ line 1
-# File test-net-lab-pavel.txt holds a list of hosts (devices) to wich copy your files.
+# To specify a list of hosts where to copy files do
+#   pscp -h <hosts.txt> <file_to_copy> <path_where_to_copy_on_remote>
 # For more info check http://manpages.ubuntu.com/manpages/focal/man1/parallel-scp.1.html
-function pscp --wraps=parallel-scp --description 'alias pscp=parallel-scp -o stdout -e stderr -h ~/work/pssh/test-net-lab-pavel.txt'
-  parallel-scp -o stdout -e stderr -h ~/work/pssh/test-net-lab-pavel.txt $argv;
+function pscp --wraps=parallel-scp --description 'alias pscp=parallel-scp -o stdout -e stderr '
+  parallel-scp -o stdout -e stderr $argv;
 end
 
