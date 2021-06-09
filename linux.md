@@ -72,6 +72,14 @@ Reads configuration files in this order: /etc/bashrc, ~/.bashrc (valid for bash)
 - interactive: when a shell session is coupled to a terminal.
 - non interactive: when a shell session is NOT coupled to a terminal.
 
+### Find out the type of shell
+To find out what type of shell is being used these options are available:
+- execute `echo $0`, if result is:
+- - _-bash_ is a **login** shell, the _-_ tells us that
+- - _bash_ is not a login shell, the missing _-_ (hyphen) tells us that
+- execute `echo $-`, if the result contains a _i_ (like _himBHs_ has an _i_) it means that is an **interactive** shell.
+To find out what the other characters mean take a look at \[10], search by _"Options"_ (right at the begining) and _"set \[+abefhkmnptuvxBCEHPT]"_ (almost at the end), or at \[11]
+
 
 ### Ubuntu 20.04 server suspending [4]
 Appeareantly someone has decided that default behaviour of server version is to go to sleep every 30 minutes more or less.
@@ -112,13 +120,15 @@ If `127.0....` is not present just add it yourself.
 ### Disable annoying beep sound in terminal [9]:
 Open **/etc/inputrc** and search for `set bell-style none`, either enable it or add it.
 
-REFERENCES:
-[1] - https://help.ubuntu.com/community/EnvironmentVariables#Persistent_environment_variables
-[2] - https://net2.com/what-is-the-difference-between-non-login-and-login-non-interactive-and-interactive-shell-sessions-in-linux-ubuntu-debian/
-[3] - https://superuser.com/questions/555081/ubuntu-environment-setting-for-gui-session-or-making-the-same-with-terminal
-[4] - http://manpages.ubuntu.com/manpages/focal/man5/systemd-sleep.conf.5.html
-[5] - http://blackhold.nusepas.com/2015/08/06/ping-icmp-open-socket-operation-not-permitted/
-[6] - https://forums.balena.io/t/ping-devices-on-the-local-network-via-hostname/2082
-[7] - https://apple.stackexchange.com/questions/326266/in-terminal-scrolling-prints-weird-characters
-[8] - http://sirlagz.net/2012/08/27/how-to-use-wpa_cli-to-connect-to-a-wireless-network/
-[9] - https://stackoverflow.com/questions/36724209/disable-beep-in-wsl-terminal-on-windows-10
+REFERENCES:  
+[1] - https://help.ubuntu.com/community/EnvironmentVariables#Persistent_environment_variables  
+[2] - https://net2.com/what-is-the-difference-between-non-login-and-login-non-interactive-and-interactive-shell-sessions-in-linux-ubuntu-debian/  
+[3] - https://superuser.com/questions/555081/ubuntu-environment-setting-for-gui-session-or-making-the-same-with-terminal  
+[4] - http://manpages.ubuntu.com/manpages/focal/man5/systemd-sleep.conf.5.html  
+[5] - http://blackhold.nusepas.com/2015/08/06/ping-icmp-open-socket-operation-not-permitted/  
+[6] - https://forums.balena.io/t/ping-devices-on-the-local-network-via-hostname/2082  
+[7] - https://apple.stackexchange.com/questions/326266/in-terminal-scrolling-prints-weird-characters  
+[8] - http://sirlagz.net/2012/08/27/how-to-use-wpa_cli-to-connect-to-a-wireless-network/  
+[9] - https://stackoverflow.com/questions/36724209/disable-beep-in-wsl-terminal-on-windows-10  
+[10] - https://linux.die.net/man/1/bash  
+[11] - https://tldp.org/LDP/abs/html/options.html  
