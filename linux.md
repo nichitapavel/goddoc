@@ -120,6 +120,14 @@ If `127.0....` is not present just add it yourself.
 ### Disable annoying beep sound in terminal [9]:
 Open **/etc/inputrc** and search for `set bell-style none`, either enable it or add it.
 
+### echo magic
+Let's say that you have a long string with escaped characters all other the place, like this one:
+`import \"influxdata/influxdb\"\n\noption task = { name: \"cardinality\_by\_bucket\", every: 1h0m0s }\n\n\n\n\nbuckets()\n\t|> map(fn: (r) => {\n\t\tcardinality = influxdb.cardinality(bucket: r.name, start: -task.every)\n\t\t\t|> findRecord(idx: 0, fn: (key) =>\n\t\t\t\t(true))\n\n\t\treturn {\n\t\t\t\_time: now(),\n\t\t\t\_measurement: \"buckets\",\n\t\t\tbucket: r.name,\n\t\t\t\_field: \"cardinality\",\n\t\t\t\_value: cardinality.\_value,\n\t\t}\n\t})\n\t|> to(bucket: \"cardinality\")`
+and your really want to make it readable. Use `echo -e "\<string>"`, like here:
+`echo -e "import \"influxdata/influxdb\"\n\noption task = { name: \"cardinalityi\_by\_bucket\", every: 1h0m0s }\n\n\n\n\nbuckets()\n\t|> map(fn: (r) => {\n\t\tcardinality = influxdb.cardinality(bucket: r.name, start: -task.every)\n\t\t\t|> findRecord(idx: 0, fn: (key) =>\n\t\t\t\t(true))\n\n\t\treturn {\n\t\t\t\_time: now(),\n\t\t\t\_measurement: \"buckets\",\n\t\t\tbucket: r.name,\n\t\t\t\_field: \"cardinality\",\n\t\t\t\_value: cardinality.\_value,\n\t\t}\n\t})\n\t|> to(bucket: \"cardinality\")"`
+**NOTE**: because of markdown, each of underscore character "_" is escaped with back slash character "\", this is important if you copy this from linux.md withoud rendering.
+
+
 REFERENCES:  
 [1] - https://help.ubuntu.com/community/EnvironmentVariables#Persistent_environment_variables  
 [2] - https://net2.com/what-is-the-difference-between-non-login-and-login-non-interactive-and-interactive-shell-sessions-in-linux-ubuntu-debian/  
