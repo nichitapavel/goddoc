@@ -63,3 +63,11 @@ if status is-interactive
     source $ENV_MODULES/init/fish
   end
 end
+
+# Load rustup if available
+if status is-interactive
+  if test -d "$HOME/.cargo/bin"
+    set -x CARGO_PATH "$HOME/.cargo/bin"
+    set -x PATH "$CARGO_PATH" "$PATH"
+  end
+end
