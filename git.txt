@@ -65,6 +65,9 @@ Add a lightweight tag (just points to a commit):
 Add a annotated tag (is like a commit, stores more information):
   git tag -a <tag> -m "<message>"
   i.e.: git tag -a v0.3 -m "Release nº v0.3"
+Remove a tag from remote:
+  git push --delete origin <tag>
+  i.e.: git push --delete origin list
 
 
 git config
@@ -89,3 +92,4 @@ REFERENCES:
 [6] - https://git-scm.com/docs/git-config#Documentation/git-config.txt-coreeol
 [7] - https://help.github.jp/enterprise/2.11/user/articles/changing-a-remote-s-url/
 [8] - https://docs.gitlab.com/ee/university/training/topics/unstage.html
+[9] - https://devconnected.com/how-to-delete-local-and-remote-tags-on-git/
