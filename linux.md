@@ -130,6 +130,9 @@ and your really want to make it readable. Use `echo -e "<string>"`, like here:
 echo -e "import \"influxdata/influxdb\"\n\noption task = { name: \"cardinality_by_bucket\", every: 1h0m0s }\n\n\n\n\nbuckets()\n\t|> map(fn: (r) => {\n\t\tcardinality = influxdb.cardinality(bucket: r.name, start: -task.every)\n\t\t\t|> findRecord(idx: 0, fn: (key) =>\n\t\t\t\t(true))\n\n\t\treturn {\n\t\t\t_time: now(),\n\t\t\t_measurement: \"buckets\",\n\t\t\tbucket: r.name,\n\t\t\t_field: \"cardinality\",\n\t\t\t_value: cardinality._value,\n\t\t}\n\t})\n\t|> to(bucket: \"cardinality\")"
 ```
 
+### Fish debug [12]
+To debug fish scripts or configurations like _~/.config/fish/config.fish_ add this `set -l fish_trace on` to the start of the file.
+
 REFERENCES:  
 [1] - https://help.ubuntu.com/community/EnvironmentVariables#Persistent_environment_variables  
 [2] - https://net2.com/what-is-the-difference-between-non-login-and-login-non-interactive-and-interactive-shell-sessions-in-linux-ubuntu-debian/  
@@ -142,3 +145,4 @@ REFERENCES:
 [9] - https://stackoverflow.com/questions/36724209/disable-beep-in-wsl-terminal-on-windows-10  
 [10] - https://linux.die.net/man/1/bash  
 [11] - https://tldp.org/LDP/abs/html/options.html  
+[12] - https://stackoverflow.com/questions/34188411/how-to-debug-fish-script#answer-67686844  
