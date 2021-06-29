@@ -49,7 +49,7 @@ end
 # the following to ~/.config/fish/config.fish:
 set PYENV_PATH ~/.pyenv/bin
 if test -d "$PYENV_PATH"
-  set -x PATH "$PYENV_PATH" $PATH
+#   set -x PATH "$PYENV_PATH" $PATH
   status is-interactive; and pyenv init --path | source
   pyenv init - | source
 end
@@ -68,6 +68,6 @@ end
 if status is-interactive
   if test -d "$HOME/.cargo/bin"
     set -x CARGO_PATH "$HOME/.cargo/bin"
-    set -x PATH "$CARGO_PATH" "$PATH"
+    set -x PATH "$CARGO_PATH" $PATH
   end
 end
