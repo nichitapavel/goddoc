@@ -3,7 +3,7 @@
 # as defined in ~/.ssh/config
 desktop-pavel
 
-# with same user as local and ip
+# with same user as local host, but on a different host (consequently different ip)
 192.168.1.170
 
 # with user and ip
