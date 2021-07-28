@@ -166,6 +166,11 @@ Get the last columns value with awk [19]:
 Force reinstall a package with apt if is already installed [20]:
   sudo apt install --reinstall <package>
   i.e.: sudo apt install --reinstall ./telegraf_1.18.0-1_amd64.deb  => localy available package
+Stress test a systems cpu for an amount of time with a specific method:
+  stress-ng --cpu <nº of workers/cores> --cpu-method <name of the method> -t <nº of seconds>
+  i.e.: stress-ng --cpu 32 --cpu-method floatconversion -t 15
+Get stres-ng available cpu methods:
+  i.e.: stress-ng --cpu-method -h
 
 
 REFERENCES:
