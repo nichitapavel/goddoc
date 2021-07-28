@@ -171,6 +171,14 @@ Stress test a systems cpu for an amount of time with a specific method:
   i.e.: stress-ng --cpu 32 --cpu-method floatconversion -t 15
 Get stres-ng available cpu methods:
   i.e.: stress-ng --cpu-method -h
+List phoronix test suite available performance tests:
+  i.e.: phoronix-test-suite list-tests
+Install an available performance test in phoronix test suite:
+  phoronix-test-suite install <performance test>
+  i.e.: phoronix-test-suite install pts/build-linux-kernel
+Run an installed performance test in phoronix test suite:
+  phoronix-test-suite run <performance test>
+  i.e.: phoronix-test-suite run pts/build-linux-kernel
 
 
 REFERENCES:
