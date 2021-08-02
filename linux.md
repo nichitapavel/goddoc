@@ -133,6 +133,35 @@ echo -e "import \"influxdata/influxdb\"\n\noption task = { name: \"cardinality_b
 ### Fish debug [12]
 To debug fish scripts or configurations like _~/.config/fish/config.fish_ add this `set -l fish_trace on` to the start of the file.
 
+### Story about apt and mysql
+This story is a not a 100% solution, is just a story....
+Once upon a time I wanted to delete/purge mysql with apt, but the only thing I got were errors like:
+- `package is in a very bad inconsistent state`
+- `dpkg: too many errors, stopping`
+- `Failed to stop mysql.service: Unit mysql.service not loaded`
+- `dpkg: warning: old mysql-server-8.0 package pre-removal script subprocess returned error exit status 1`
+- `Failed to stop mysql.service: Unit mysql.service not loaded.`
+- `/usr/bin/deb-systemd-helper: error: systemctl preset failed on mysql.service: No such file or directory`  
+
+What I did to fix this damn thing? The next steps, in no particular order and without any specific outcome:
+- locate the `mysql.service` with `locate mysql.service`, found out that in `/etc/systemd/system` there must be 2 service files:
+mysql.service and mysqld.service. Both of them pointed to a mariadb.service file that did not exist. There were other mysql*.service
+files in some path in `/var/...`. I symlinked the `/etc/systemd/system` to the `/var/...`. Afterwards an `update-dist` (do a grep in this repo)
+yielded different errors, now a `/etc/mysql/FROZEN` appeared. It stated that in `/var/lib/mysql/` compatible mysql database should be found.
+I deleted everything in that path and the command `sudo dpkg-reconfigure mysql-server-8.0` still yielded some errors, but the
+`sudo apt purge mysql-server-8.0` worked flawlessly. Before this set of commands where run, I do not know if these commands really did something:
+- `sudo apt-get install -f`
+- `sudo dpkg --remove --force-remove-reinstreq --force-depends mysql-server-8.0`
+- `sudo apt install --reinstall -f --verbose-versions mysql-server-8.0`
+- `sudo apt purge -f --verbose-versions mysql-server-8.0`
+- `sudo apt install --reinstall mysql-server-8.0=8.0.25-0ubuntu0.20.04.1`
+- `sudo dpkg --verify mysql-server`
+- `sudo dpkg --triggers-only mysql-server`
+- `sudo apt purge mysql-server-8.0`
+- `dpkg --configure mysql-server`
+- `sudo apt install --reinstall mysql-server`
+
+
 REFERENCES:  
 [1] - https://help.ubuntu.com/community/EnvironmentVariables#Persistent_environment_variables  
 [2] - https://net2.com/what-is-the-difference-between-non-login-and-login-non-interactive-and-interactive-shell-sessions-in-linux-ubuntu-debian/  
