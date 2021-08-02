@@ -16,6 +16,7 @@ Commands:
 - Copy _blender-2.91.2-linux64.tar.xz_ on hosts specified in _pssh-hosts_ in _/tmp/_ folder:  
   `parallel-scp -h pssh-hosts blender-2.91.2-linux64.tar.xz /tmp/`
 
+
 REFERENCES:  
 [1] - https://linux.die.net/man/1/pssh  
 [2] - https://www.golinuxcloud.com/pssh-commands-parallel-ssh-linux-examples/

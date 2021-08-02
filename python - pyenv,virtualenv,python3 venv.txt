@@ -108,6 +108,7 @@ Remove an installed package without asking for confirmation:
 Install a package with parallel compilation:
   pip install --install-option="--jobs=6" <package>
 
+
 References:
 [1] - https://github.com/pyenv/pyenv
 [2] - https://github.com/pyenv/pyenv/wiki/Common-build-problems

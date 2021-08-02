@@ -68,6 +68,7 @@ Check logical volume available/used space:
   df -h
 
 
+REFERENCES:
 [1] - https://www.digitalocean.com/community/tutorials/an-introduction-to-lvm-concepts-terminology-and-operations
 [2] - https://www.digitalocean.com/community/tutorials/how-to-use-lvm-to-manage-storage-devices-on-ubuntu-18-04
 [3] - https://access.redhat.com/solutions/44089

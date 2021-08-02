@@ -43,5 +43,5 @@ Run a new bash with multiple commands (single quotes are important) [1]:
   tsp bash -c 'cd /home/user1 && ls -la'
 
 
-Rerefences:
+REFERENCES:
 [1] - https://stackoverflow.com/questions/54351311/tsp-fails-to-run-the-bash-command#answer-54352677

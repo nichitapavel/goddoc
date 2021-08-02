@@ -35,5 +35,6 @@ Other commands with dd:
 - disk latency [1]:
   `dd if=/dev/zero of=/tmp/test2.img bs=512 count=1000 oflag=dsync`
 
+
 REFERENCES:
 [1] - https://www.cyberciti.biz/faq/howto-linux-unix-test-disk-performance-with-dd-command/

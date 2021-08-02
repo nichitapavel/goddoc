@@ -27,5 +27,6 @@ Java's Keytool for managing keys/certificates
   keytool -importkeystore -srckeystore <kestore 1> -srcalias <name of key> -destkeystore <kestore 2> -destalias <name of key> -deststoretype PKCS12
   ```
 
+
 REFERENCES:
 [1] - https://stackoverflow.com/questions/31228462/how-to-change-pkcs12-keystore-password-using-keytool
