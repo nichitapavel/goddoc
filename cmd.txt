@@ -181,6 +181,9 @@ Run an installed performance test in phoronix test suite:
   i.e.: phoronix-test-suite run pts/build-linux-kernel
 Quick network scan:
   sudo arp-scan --localnet
+Close a telnet connection with spanish keyboard:
+  Ctrl + Alt Gr + ]
+  type "quit"
 
 
 REFERENCES:
