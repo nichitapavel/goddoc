@@ -68,6 +68,9 @@ Add a annotated tag (is like a commit, stores more information):
 Remove a tag from remote:
   git push --delete origin <tag>
   i.e.: git push --delete origin list
+Remove a remote branch that shows locally [10]:
+  git fetch -p
+  Solution to possible: "fatal: --delete doesn't make sense without any refs"
 
 
 git config
@@ -93,3 +96,4 @@ REFERENCES:
 [7] - https://help.github.jp/enterprise/2.11/user/articles/changing-a-remote-s-url/
 [8] - https://docs.gitlab.com/ee/university/training/topics/unstage.html
 [9] - https://devconnected.com/how-to-delete-local-and-remote-tags-on-git/
+[10] - https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/
