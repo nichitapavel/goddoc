@@ -9,8 +9,13 @@ Get/set power properties [1]:
   powercfg
 Sync your new MicrosoftAccount password to your device [2]:
   runas /u:[my account]@outlook.com cmd.exe
+Calculate hash of a file [3]:
+  certUtil -hashfile <pathToFileToCheck> <HASH method>
+  i.e.: certUtil -hashfile kitchen.docs MD5
+  Available hash algorithms: MD2 MD4 MD5 SHA1 SHA256 SHA384 SHA512
 
 
 REFERENCES:
 [1] - https://www.makeuseof.com/tag/15-cmd-commands-every-windows-user-know/
 [2] - https://answers.microsoft.com/en-us/windows/forum/all/force-refresh-sync-of-microsoft-account-password/d7bddb0d-663f-4775-9593-ce21b17ca800?auth=1
+[3] - https://superuser.com/questions/245775/is-there-a-built-in-checksum-utility-on-windows-7#answer-898377
