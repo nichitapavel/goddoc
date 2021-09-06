@@ -193,3 +193,9 @@ or `sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal
 **Manual:**
 - `sudo vim wireshark.list` -> add repositories location, save and quit.
 - `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg adv --keyserver keyserver.ubuntu.com --receive-keys A2E402B85A4B70CD78D8A3D9D875551314ECA0F0`
+
+### [Nginx](https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/#installing-prebuilt-ubuntu-packages)
+**Manual:**
+- `sudo vim nginx.list` -> add repositories location, save and quit.
+- `wget https://nginx.org/keys/nginx_signing.key -O keys/nginx_signing.key` -> get the repo signing key
+- `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add keys/nginx_signing.key`
