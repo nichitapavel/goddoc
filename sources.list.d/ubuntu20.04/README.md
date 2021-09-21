@@ -199,3 +199,10 @@ or `sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal
 - `sudo vim nginx.list` -> add repositories location, save and quit.
 - `wget https://nginx.org/keys/nginx_signing.key -O keys/nginx_signing.key` -> get the repo signing key
 - `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add keys/nginx_signing.key`
+
+### [Vagrant](https://www.vagrantup.com/downloads)
+**Manual:**
+- `sudo vim vagrant.list` -> add repositories location, save and quit.
+- `curl -FsSL https://apt.releases.hashicorp.com/gpg -o keys/vagrant.gpg` -> get the repo signing key
+- `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add keys/vagrant.gpg
+
