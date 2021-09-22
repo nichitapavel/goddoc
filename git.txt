@@ -71,6 +71,9 @@ Remove a tag from remote:
 Remove a remote branch that shows locally [10]:
   git fetch -p
   Solution to possible: "fatal: --delete doesn't make sense without any refs"
+Show only the modified files between two commits [11]:
+  git diff --name-only <commit #01> <commit #02>
+  i.e.: git diff --name-only 7a0c9a9 ef7dfa4
 
 
 git config
@@ -97,3 +100,4 @@ REFERENCES:
 [8] - https://docs.gitlab.com/ee/university/training/topics/unstage.html
 [9] - https://devconnected.com/how-to-delete-local-and-remote-tags-on-git/
 [10] - https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/
+[11] - https://stackoverflow.com/questions/1552340/how-to-list-only-the-names-of-files-that-changed-between-two-commits
