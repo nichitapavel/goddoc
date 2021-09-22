@@ -184,6 +184,8 @@ Quick network scan:
 Close a telnet connection with spanish keyboard:
   Ctrl + Alt Gr + ]
   type "quit"
+Save a file with sudo from within vim [22]:
+  :w !sudo tee %
 
 
 REFERENCES:
@@ -208,3 +210,4 @@ REFERENCES:
 [19] https://stackoverflow.com/questions/13046167/printing-the-last-column-of-a-line-in-a-file
 [20] https://www.cyberciti.biz/faq/debian-ubuntu-linux-reinstall-a-package-using-apt-get-command/
 [21] https://zaiste.net/posts/tree-ignore-directories-patterns/
+[22] https://www.cyberciti.biz/faq/vim-vi-text-editor-save-file-without-root-permission/
