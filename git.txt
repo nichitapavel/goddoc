@@ -74,6 +74,9 @@ Remove a remote branch that shows locally [10]:
 Show only the modified files between two commits [11]:
   git diff --name-only <commit #01> <commit #02>
   i.e.: git diff --name-only 7a0c9a9 ef7dfa4
+Show only tracked files[12]:
+  git ls-tree -r <branch> --name-only
+  i.e.: git ls-tree -r main --name-only
 
 
 git config
@@ -101,3 +104,4 @@ REFERENCES:
 [9] - https://devconnected.com/how-to-delete-local-and-remote-tags-on-git/
 [10] - https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/
 [11] - https://stackoverflow.com/questions/1552340/how-to-list-only-the-names-of-files-that-changed-between-two-commits
+[12] - https://stackoverflow.com/questions/15606955/how-can-i-make-git-show-a-list-of-the-files-that-are-being-tracked/15606998#answer-15606995
