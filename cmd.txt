@@ -87,6 +87,9 @@ Close a frozen ssh connection [3]:
   hit "Enter" and type "~."
 Generate a ssh key MD5 fingerprint (ala github) [4]:
   ssh-keygen -l -E md5 -f ~/.ssh/id_rsa.pub
+Generate a ssh public key from the private key [24]:
+  ssh-keygen -y -f <private key>
+  i.e.: ssh-keygen -y -f boxes/.-VAGRANTSLASH-package.box/0/virtualbox/vagrant_private_key
 Fancy system info (install with apt):
   neofetch
 List screen session:
@@ -186,6 +189,10 @@ Close a telnet connection with spanish keyboard:
   type "quit"
 Save a file with sudo from within vim [22]:
   :w !sudo tee %
+Auto-choose options when installing with apt some packages [23]:
+  debconf-set-selections <<< "postfix postfix/mailname  string  ubuntu-bionic"
+  debconf-set-selections <<< "postfix postfix/main_mailer_type  select  No configuration"
+  sudo apt install rkhunter
 
 
 REFERENCES:
@@ -211,3 +218,5 @@ REFERENCES:
 [20] https://www.cyberciti.biz/faq/debian-ubuntu-linux-reinstall-a-package-using-apt-get-command/
 [21] https://zaiste.net/posts/tree-ignore-directories-patterns/
 [22] https://www.cyberciti.biz/faq/vim-vi-text-editor-save-file-without-root-permission/
+[23] https://serverfault.com/questions/143968/automate-the-installation-of-postfix-on-ubuntu#comment-1256936
+[24] https://stackoverflow.com/questions/5244129/use-rsa-private-key-to-generate-public-key#answer-5246045
