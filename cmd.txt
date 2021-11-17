@@ -193,6 +193,9 @@ Auto-choose options when installing with apt some packages [23]:
   debconf-set-selections <<< "postfix postfix/mailname  string  ubuntu-bionic"
   debconf-set-selections <<< "postfix postfix/main_mailer_type  select  No configuration"
   sudo apt install rkhunter
+Remove binary/strange symbols from a file [25]:
+  tr -cd '\11\12\15\40-\176' < <file with binary chars> > <new file>
+  i.e.: tr -cd '\11\12\15\40-\176' < cmd.txt > clean.cmd.txt
 
 
 REFERENCES:
@@ -220,3 +223,4 @@ REFERENCES:
 [22] https://www.cyberciti.biz/faq/vim-vi-text-editor-save-file-without-root-permission/
 [23] https://serverfault.com/questions/143968/automate-the-installation-of-postfix-on-ubuntu#comment-1256936
 [24] https://stackoverflow.com/questions/5244129/use-rsa-private-key-to-generate-public-key#answer-5246045
+[25] https://alvinalexander.com/blog/post/linux-unix/how-remove-non-printable-ascii-characters-file-unix/
