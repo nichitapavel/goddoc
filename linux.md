@@ -161,8 +161,17 @@ I deleted everything in that path and the command `sudo dpkg-reconfigure mysql-s
 - `dpkg --configure mysql-server`
 - `sudo apt install --reinstall mysql-server`
 
+### Add new sudo user and remove priveleges of old user
+1. Create a user: `sudo adduser <user_name>`
+2. Add user to **sudo** group: `sudo usermod -aG sudo <user_name>`
+3. Delete old user from **sudo** group: `sudo deluser <old_user> sudo`
+4. If there is a file, remove from **_/etc/sudoers.d/_** the file that allows a user to run sudo commands without command.  
+5. Next steps if you want to have a group with multiple users:  
+  5.1 Create group: `sudo addgroup <group_name>`  
+  5.3 Add users to the new group: `usermod -aG <group_name> <user_name>`
 
-REFERENCES:  
+
+**REFERENCES:**  
 [1] - https://help.ubuntu.com/community/EnvironmentVariables#Persistent_environment_variables  
 [2] - https://net2.com/what-is-the-difference-between-non-login-and-login-non-interactive-and-interactive-shell-sessions-in-linux-ubuntu-debian/  
 [3] - https://superuser.com/questions/555081/ubuntu-environment-setting-for-gui-session-or-making-the-same-with-terminal  
