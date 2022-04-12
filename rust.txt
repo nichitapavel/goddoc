@@ -1,0 +1,7 @@
+Rust - Rust programing language tools and commands
+
+Set a specific version of rust compiler to use [1]:
+  rustup default 1.58.1
+
+REFERENCES:
+[1] - https://users.rust-lang.org/t/how-can-i-revert-to-older-version-of-rust/20497
