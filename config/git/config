@@ -6,7 +6,7 @@
 
 # https://git-scm.com/docs/git-config#Documentation/git-config.txt-alias
 [alias]
-  plog = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  plog = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ai / %cr) %C(bold blue)<%an>%Creset' --abbrev-commit
   last-commit = log -n 1 --pretty=format:"%h"
 
 # https://git-scm.com/docs/git-config#Documentation/git-config.txt-coreeol
@@ -31,6 +31,7 @@
 # https://git-scm.com/docs/git-config#Documentation/git-config.txt-pushdefault
 [push]
   default = simple
+  autoSetupRemote = true
 
 # https://git-scm.com/docs/git-config#Documentation/git-config.txt-pull
 [pull]
