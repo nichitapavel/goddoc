@@ -196,6 +196,8 @@ Auto-choose options when installing with apt some packages [23]:
 Remove binary/strange symbols from a file [25]:
   tr -cd '\11\12\15\40-\176' < <file with binary chars> > <new file>
   i.e.: tr -cd '\11\12\15\40-\176' < cmd.txt > clean.cmd.txt
+Open an image/photo from terminal [26]:
+  display <path to image>
 
 
 REFERENCES:
@@ -224,3 +226,4 @@ REFERENCES:
 [23] https://serverfault.com/questions/143968/automate-the-installation-of-postfix-on-ubuntu#comment-1256936
 [24] https://stackoverflow.com/questions/5244129/use-rsa-private-key-to-generate-public-key#answer-5246045
 [25] https://alvinalexander.com/blog/post/linux-unix/how-remove-non-printable-ascii-characters-file-unix/
+[26] https://unix.stackexchange.com/questions/35333/what-is-the-fastest-way-to-view-images-from-the-terminal
