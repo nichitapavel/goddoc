@@ -31,6 +31,7 @@ Various tools that need to be installed and are usefull
 |clinfo|clinfo|Query OpenCL system information|Ubuntu20.04|
 |stress-ng|stress-ng|Stress/Benchmark differents parts of your system|Ubuntu20.04|
 |arp-scan|arp-scan|scan your network based on arp protocol|Ubuntu20.04|
+|apt-rdepends|apt-rdepends|Lists packages that depend on a package|Ubuntu22.04|
 
 Tools that posibly I will use at some date
 ==========================================
