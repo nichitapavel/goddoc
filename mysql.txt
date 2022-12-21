@@ -1,0 +1,19 @@
+MySQL - commands
+
+
+Connect a freshly installed mysql (by defualt user root has no password):
+  sudo mysql -u root
+Delete a database:
+  drop database <database name>
+List columns of a table:
+  desc mysql.user
+Show user of mysql:
+  select user, host, plugin, authentication_string from mysql.user;
+Remove a user from db:
+  drop user <user>@<host>
+Create a user with a sha2 password plugin:
+  CREATE USER '<user>'@'localhost' IDENTIFIED WITH caching_sha2_password BY '<password>';
+Create a user role:
+  CREATE ROLE '<role name>';
+Give all permission to a database for a role:
+  GRANT ALL ON <db name>.* to ' role';
