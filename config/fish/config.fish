@@ -50,8 +50,8 @@ end
 set PYENV_PATH ~/.pyenv/bin
 if test -d "$PYENV_PATH"
   set -x PATH "$PYENV_PATH" $PATH
-  status is-interactive; and pyenv init --path | source
-  pyenv init - | source
+#  status is-interactive; and pyenv init --path | source
+#  pyenv init - | source
 end
 
 # Load environment modules if available
