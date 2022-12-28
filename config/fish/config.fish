@@ -47,11 +47,13 @@ end
 # https://github.com/pyenv/pyenv/issues/32
 # Load pyenv automatically by appending
 # the following to ~/.config/fish/config.fish:
-set PYENV_PATH ~/.pyenv/bin
-if test -d "$PYENV_PATH"
-  set -x PATH "$PYENV_PATH" $PATH
+# set PYENV_PATH ~/.pyenv/bin
+if status is-interactive
+  if test -d "$HOME/.pyenv/bin"
+  set -x PATH "$HOME/.pyenv/bin" $PATH
 #  status is-interactive; and pyenv init --path | source
 #  pyenv init - | source
+  end
 end
 
 # Load environment modules if available
