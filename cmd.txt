@@ -90,6 +90,9 @@ Generate a ssh key MD5 fingerprint (ala github) [4]:
 Generate a ssh public key from the private key [24]:
   ssh-keygen -y -f <private key>
   i.e.: ssh-keygen -y -f boxes/.-VAGRANTSLASH-package.box/0/virtualbox/vagrant_private_key
+Gather/scan SSH public keys from servers:
+  ssh-keyscan -t <key type> <server address>
+  i.e.:ssh-keyscan -t rsa git.quantum1net.com
 Fancy system info (install with apt):
   neofetch
 List screen session:
