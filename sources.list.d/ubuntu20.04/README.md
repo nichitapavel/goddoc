@@ -1,6 +1,10 @@
 Sources for ubuntu 20.04
 ========================
 
+## DEPRECATED:
+Appearently the `apt-key add` is deprecated, so now there is a new way to do all this things.....
+More info here [1].
+
 ## General:
 
 - **Don't expect consistency, I'm not a consistent person (sorry future me)**
@@ -206,3 +210,6 @@ or `sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal
 - `curl -FsSL https://apt.releases.hashicorp.com/gpg -o keys/vagrant.gpg` -> get the repo signing key
 - `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add keys/vagrant.gpg
 
+
+REFERENCES:
+[1] - https://askubuntu.com/questions/1286545/what-commands-exactly-should-replace-the-deprecated-apt-key
