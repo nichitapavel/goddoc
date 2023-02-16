@@ -3,7 +3,7 @@ Sources for ubuntu 20.04
 
 ## DEPRECATED:
 Appearently the `apt-key add` is deprecated, so now there is a new way to do all this things.....
-More info here [1].
+More info here [1]. For GPG (GNU Privacy Guard) check here [2].
 
 ## General:
 
@@ -204,12 +204,20 @@ or `sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal
 - `wget https://nginx.org/keys/nginx_signing.key -O keys/nginx_signing.key` -> get the repo signing key
 - `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add keys/nginx_signing.key`
 
-### [Vagrant](https://www.vagrantup.com/downloads)
-**Manual:**
+### [Vagrant/Hashicorp](https://www.vagrantup.com/downloads)
+**Manual .list:**
 - `sudo vim vagrant.list` -> add repositories location, save and quit.
 - `curl -FsSL https://apt.releases.hashicorp.com/gpg -o keys/vagrant.gpg` -> get the repo signing key
 - `sudo apt-key --keyring /etc/apt/trusted.gpg.d/apt-custom-keys.gpg add keys/vagrant.gpg
 
+**Manual .sources:**
+Use the _hashicorp.sources_ file to use the "new" deb822 file format
+- `sudo vim hashicorp.sources` -> add repositories location, save and quit.
+- `wget -O - https://apt.releases.hashicorp.com/gpg | gpg --dearmor -o hashicorp.gpg` -> get the repo signing key and make it a gpg binary format.
+The `wget` will most probably get you an _.asc_ format, if you can read than it's an _.asc_, even if it ends in _.gpg_.
+- `sudo mv hashicorp.gpg /etc/apt/keyrings/hashicorp.gpg`
 
-REFERENCES:
-[1] - https://askubuntu.com/questions/1286545/what-commands-exactly-should-replace-the-deprecated-apt-key
+
+REFERENCES:  
+[1] - https://askubuntu.com/questions/1286545/what-commands-exactly-should-replace-the-deprecated-apt-key  
+[2] - https://www.linuxjournal.com/article/8732

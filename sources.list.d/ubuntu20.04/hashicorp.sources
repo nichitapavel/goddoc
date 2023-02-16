@@ -1,0 +1,8 @@
+# Working example of debian 822 file format for repositories
+Enabled: yes
+Types: deb
+URIs: https://apt.releases.hashicorp.com
+Suites: focal
+Components: main
+Signed-By: /etc/apt/keyrings/vagrant.gpg
+Architectures: amd64
