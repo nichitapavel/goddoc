@@ -1,0 +1,17 @@
+CUPS - printing server for linux
+    Have a file named "~/.cups/client.conf" with server name and authentication configuration.
+
+Show default printer:
+  lpoptions
+Change default printer:
+  lpoptions -d <printer name>
+  lpoptions -d fx78
+Ask kerberos for a ticket (if you have it configured with kerberos):
+  kinit <user account>
+  kinit nichitapavel@yahoo.ar
+Print a pdf from the console:
+  lpr <some document>
+See priting queue:
+  lpq
+Cancel a print job (get the job id with "lpq" command):
+  cancel <job id>
