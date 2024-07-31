@@ -17,9 +17,10 @@ When you change directories with the *cd* command, **pyenv** automatically chang
 
 Installation:
 - install required pacakges [2]
-sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
-libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+sudo apt-get install -y libbz2-dev libncurses-dev liblzma-dev libssl-dev libreadline-dev \
+ readline-common zlib1g-dev libsqlite3-dev libffi-dev \
+ make build-essential wget curl llvm  \
+ xz-utils tk-dev python-openssl
 - install OpenSSL to get a working version of python 2.7.9
 sudo apt install libssl1.0-dev
 - install pyenv itself [3]
