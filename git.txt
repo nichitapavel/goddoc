@@ -77,6 +77,12 @@ Show only the modified files between two commits [11]:
 Show only tracked files[12]:
   git ls-tree -r <branch> --name-only
   i.e.: git ls-tree -r main --name-only
+Create git patches:
+  git diff > <your file>
+  i.e.: git diff > fix.patch
+Apply a git patch:
+  git apply <your file>
+  i.e.: git apply fix.patch
 
 
 git config
