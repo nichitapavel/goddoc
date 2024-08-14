@@ -75,3 +75,10 @@ if status is-interactive
     set -x PATH "$HOME/.cargo/bin" $PATH
   end
 end
+
+# Load net-tools if available
+if status is-interactive
+  if test -d /home/pnichita/.dotnet/tools
+    set -x PATH "$HOME/.dotnet/tools" $PATH
+  end
+end
