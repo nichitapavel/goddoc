@@ -201,6 +201,14 @@ Remove binary/strange symbols from a file [25]:
   i.e.: tr -cd '\11\12\15\40-\176' < cmd.txt > clean.cmd.txt
 Open an image/photo from terminal [26]:
   display <path to image>
+Hold a package (prevent it from being updated) [27]:
+  sudo apt-mark hold <package-name>
+  i.e.: sudo apt-mark hold cuda-drivers-555
+Show packages that are hold (prevented from being updated) [27]:
+  sudo apt-mark showhold
+Remove restrictions for a package (allow to be updated) [27]:
+  sudo apt-mark unhold <package-name>
+  i.e.: sudo apt-mark unhold cuda-drivers-555
 
 
 REFERENCES:
@@ -230,3 +238,4 @@ REFERENCES:
 [24] https://stackoverflow.com/questions/5244129/use-rsa-private-key-to-generate-public-key#answer-5246045
 [25] https://alvinalexander.com/blog/post/linux-unix/how-remove-non-printable-ascii-characters-file-unix/
 [26] https://unix.stackexchange.com/questions/35333/what-is-the-fastest-way-to-view-images-from-the-terminal
+[27] https://askubuntu.com/questions/18654/how-to-prevent-updating-of-a-specific-package#answer-18656
